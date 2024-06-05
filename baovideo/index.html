@@ -1,11 +1,14 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BaoVideo - 首页</title>
+<script src="https://cdn.staticfile.net/jquery/1.10.2/jquery.min.js"></script>
 <style type="text/css">
+	::selection {
+		color: #377dff;
+		background-color: rgba(55, 125, 255, 0.1);
+	}
 	* {
 		margin:0;padding:0;
 	}
@@ -26,15 +29,28 @@
 			width:900px;
 		}
 		.sjb {display:none;}
+		.bt {
+			font-size:20px;
+		}
+		.data{font-size:13.5px;}
+		.time {font-size:14px;}
+		.baobf,.bibf{font-size:15.5px;}
+		.jbbf {font-size:14px}
 	}
 	@media(max-width:900px) {
 		.spride_container_ROUND_1 {
 			width:100%;
 		}
 		.dnb {display:none;}
+		.bt {
+			font-size:16px;
+		}
+		.data{font-size:11px;}
+		.time {font-size:12px;}
+		.baobf, .bibf, .jbbf {font-size:12px}
 	}
 	.spride_container_ROUND_2 p {
-		font-size:16.5px;line-height:2.2;
+		/*font-size:16.5px;line-height:2.2;*/
 	}
 	.spride_container_ROUND_2 p a {
 		color:#0080FF;text-decoration:none;
@@ -51,7 +67,7 @@
 		padding:10px;
 	}
 	.spride_container_TOP {
-		background:#004B97;
+		background:linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);;
 	}
 	.beta {
 		background:#00c9a7;
@@ -62,26 +78,33 @@
 		margin-left:10px;
 	}
 	.baobf {
-		font-size:14px;
-		padding:10px 15px;
-		margin:10px 0px;
+		padding:7px 15px;
+		margin-top:15px;
 		background:grey;
 		opacity:0.6;
 		color:#fff;
 		border:none;
-		text-decoration:none;width:100px;display:block;border-radius:100px;
+		text-decoration:none;border-radius:99px;display:inline-block;margin-right:7px;
 		cursor:not-allowed;
 	}
 	.bibf {
-		font-size:14px;
-		padding:10px 15px;
-		margin:10px 0px;
+		padding:7px 15px;
+		margin-top:15px;
 		background:#009ad6;
 		color:#fff;
 		border:none;
-		text-decoration:none;width:100px;display:block;border-radius:100px;
+		text-decoration:none;border-radius:99px;display:inline-block;margin-right:7px;
 	}
-	.baobf:hover,.bibf:hover {opacity:0.6}
+	.jbbf {
+		padding:7px 12px;
+		margin-top:15px;
+		background:#fff;
+		color:#ed4c78;
+		border:none;
+		float:right;
+		text-decoration:none;border-radius:9px;display:inline-block;
+	}
+	.baobf:hover,.bibf:hover {opacity:0.6;text-decoration:none}
 	.bottom {
 		background:#4c4c4c;
 		color:#fff;
@@ -91,63 +114,183 @@
 		padding:22px 0;
 		margin-top:15px;
 	}
+	.baobffs {
+		display:none;
+		font-size:14.5px;
+		color:#8c98a4;
+		margin-top:0px;
+	}
+	.baobfbt {
+		background:#fff;
+		border: 1px solid rgba(231, 234, 243, 0.7);
+		box-shadow:0rem 0.375rem 0.75rem rgba(140, 152, 164, 0.075);
+		border-radius:10px;
+		padding:20px 30px;
+		cursor:pointer;
+	}
+	.time {line-height:1.2;font-weight:bold;color:#8c98a4;padding:5px 0;}
+	.bt {line-height:1.2;color:#000;font-weight:bold;padding:5px 0;}
+	.data {float:right;padding:5px 10px;border-radius:100px;color:#ed4c78;background:rgba(237, 76, 120, 0.1);}
+	.baospbf {padding:10px 0}
 </style>
+<script> 
+$(document).ready(function(){
+  $(".sp1").click(function(){
+    $(".sp1s").fadeToggle("slow");
+  });
+  $(".sp2").click(function(){
+    $(".sp2s").fadeToggle("slow");
+  });
+  $(".sp3").click(function(){
+    $(".sp3s").fadeToggle("slow");
+  });
+  $(".sp4").click(function(){
+    $(".sp4s").fadeToggle("slow");
+  });
+ $(".sp5").click(function(){
+    $(".sp5s").fadeToggle("slow");
+});
+
+$(".sp6").click(function(){
+    $(".sp6s").fadeToggle("slow");
+});
+
+$(".sp7").click(function(){
+    $(".sp7s").fadeToggle("slow");
+});
+
+$(".sp8").click(function(){
+    $(".sp8s").fadeToggle("slow");
+});
+
+$(".sp9").click(function(){
+    $(".sp9s").fadeToggle("slow");
+});
+
+$(".sp10").click(function(){
+    $(".sp10s").fadeToggle("slow");
+});
+
+$(".sp11").click(function(){
+    $(".sp11s").fadeToggle("slow");
+});
+
+$(".sp12").click(function(){
+    $(".sp12s").fadeToggle("slow");
+});
+
+$(".sp13").click(function(){
+    $(".sp13s").fadeToggle("slow");
+});
+
+$(".sp14").click(function(){
+    $(".sp14s").fadeToggle("slow");
+});
+
+$(".sp15").click(function(){
+    $(".sp15s").fadeToggle("slow");
+});
+
+$(".sp16").click(function(){
+    $(".sp16s").fadeToggle("slow");
+});
+
+$(".sp17").click(function(){
+    $(".sp17s").fadeToggle("slow");
+});
+
+$(".sp18").click(function(){
+    $(".sp18s").fadeToggle("slow");
+});
+});
+</script>
+<title>BaoVideo - 首页</title>
 </head>
 <body>
 <div class="spride_container_TOP">
 	<div align="center">
 		<div class="spride_container_ROUND_1">
-			<p style="color:#fff;padding:20px 10px;"><img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAgvYH_sgYopObwoQYw4AU4Yw.png" height="26px"/><span class="sjb beta">手机版 Beta</span><span class="dnb beta">电脑版 Beta</span></p>
+			<p style="color:#fff;padding:20px 10px;"><img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAgvYH_sgYopObwoQYw4AU4Yw.png" height="26px"/><span class="sjb beta">手机版</span><span class="dnb beta">电脑版</span></p>
 		</div>
 	</div>
 </div>
 <div align="center">
 	<div class="spride_container_ROUND_1 spride_style_BGW">
-		<img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAg94X_sgYouKPGxQcwyAs40wM.png" width="100%"/>
+		<img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAg94X_sgYouKPGxQcwyAs40wM.png" width="100%" style="opacity:0.99;" />
 		<div class="spride_container_ROUND_2">
-			<!--<h2>LOREM IPSUM DOLOR<br/></h2>-->
-			<table border="0">
-				<tbody>
-					<tr>
-						<td>1999/12/31</td>
-						<td>无标题视频</td>
-						<td><a class="baobf" href="#">BaoVideo播放</a><a class="bibf" href="#">哔哩哔哩播放</a></td>
-					</tr>
-					<tr>
-						<td>1999/12/31</td>
-						<td>无标题视频</td>
-						<td><a class="baobf" href="#">BaoVideo播放</a><a class="bibf" href="#">哔哩哔哩播放</a></td>
-					</tr>
-					<tr>
-						<td>1999/12/31</td>
-						<td>无标题视频</td>
-						<td><a class="baobf" href="#">BaoVideo播放</a><a class="bibf" href="#">哔哩哔哩播放</a></td>
-					</tr>
-					<tr>
-						<td>1999/12/31</td>
-						<td>无标题视频</td>
-						<td><a class="baobf" href="#">BaoVideo播放</a><a class="bibf" href="#">哔哩哔哩播放</a></td>
-					</tr>
-					<tr>
-						<td>1999/12/31</td>
-						<td>无标题视频</td>
-						<td><a class="baobf" href="#">BaoVideo播放</a><a class="bibf" href="#">哔哩哔哩播放</a></td>
-					</tr>
-					<tr>
-						<td>1999/12/31</td>
-						<td>无标题视频</td>
-						<td><a class="baobf" href="#">BaoVideo播放</a><a class="bibf" href="#">哔哩哔哩播放</a></td>
-					</tr>
-					<tr>
-						<td>1999/12/31</td>
-						<td>无标题视频</td>
-						<td><a class="baobf" href="#">BaoVideo播放</a><a class="bibf" href="#">哔哩哔哩播放</a></td>
-					</tr>
-				</tbody>
-			</table>
+
+
+<div class="baospbf">
+				<div class="baobfbt sp8">
+					<p class="time">2022-01-10</p><p class="bt">高中摆烂人 2 之西电东输<span class="data">全网 15,369次播放</span></p>
+					<div class="baobffs sp8s">
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1ea411q71F" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+<div class="baospbf">
+				<div class="baobfbt sp7">
+					<p class="time">2021-12-16</p><p class="bt">高中摆烂人图鉴<span class="data">全网 291,637次播放</span></p>
+					<div class="baobffs sp7s">
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV12Y411W7ta" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="baospbf">
+				<div class="baobfbt sp6">
+					<p class="time">2021-12-15</p><p class="bt">如何制作炒田鼠√<span class="data">全网 1,271次播放</span></p>
+					<div class="baobffs sp6s">
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1sr4y1D784" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="baospbf">
+				<div class="baobfbt sp5">
+					<p class="time">2021-12-14</p><p class="bt">震惊！我在学校里遇见丧尸了？<span class="data">全网 1,367次播放</span></p>
+					<div class="baobffs sp5s">
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1nr4y1D7LQ" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="baospbf">
+				<div class="baobfbt sp4">
+					<p class="time">2021-12-10</p><p class="bt">欢乐学习人 4（学习人的破防时刻）<span class="data">全网 1,593次播放</span></p>
+					<div class="baobffs sp4s">
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1kr4y1D7nr" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="baospbf">
+				<div class="baobfbt sp3">
+					<p class="time">2021-12-08</p><p class="bt">欢乐学习人 3（独立宣言限定）<span class="data">全网 1,502次播放</span></p>
+					<div class="baobffs sp3s">
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1CL41177Cz" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="baospbf">
+				<div class="baobfbt sp2">
+					<p class="time">2021-12-08</p><p class="bt">欢乐学习人 2<span class="data">全网 1,237次播放</span></p>
+					<div class="baobffs sp2s">
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1QU4y1N7r3" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="baospbf">
+				<div class="baobfbt sp1">
+					<p class="time">2021-12-08</p><p class="bt">欢乐内卷人 1<span class="data">全网 2,033次播放</span></p>
+					<div class="baobffs sp1s">
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1th411x7P8" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+
+
 		</div>
 	</div>
 </div>
-<div class="bottom">BaoVideo 学习宝视频中心.</div>
+<div class="bottom">© 2024 BaoVideo 学习宝视频中心. <!--简介[About Us] BaoVideo是学习宝自营视频平台，通过平台聚合和视频自存储，让用户享受高质量的在线视频播放服务。。--></div>
 </body>
 </html>
