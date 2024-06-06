@@ -10,7 +10,7 @@
 		background-color: rgba(55, 125, 255, 0.1);
 	}
 	* {
-		margin:0;padding:0;
+		margin:0;padding:0;font-family:PingFang SC,sans-serif;
 	}
 	body {
 		background:;
@@ -37,6 +37,8 @@
 		.baobf,.bibf{font-size:15.5px;}
 		.jbbf {font-size:14px}
 		.bottom {font-size:17px;}
+		.baobfbt {padding:25px 40px;}
+		.bikan {width:65px;height:65px;}
 	}
 	@media(max-width:900px) {
 		.spride_container_ROUND_1 {
@@ -51,6 +53,8 @@
 		.baobf, .bibf, .jbbf {font-size:11px}
 		.baobffs p {font-size:12px;}
 		.bottom {font-size:13px;}
+		.baobfbt {padding:20px 30px;}
+		.bikan {width:50px;height:50px;}
 	}
 	.spride_container_ROUND_2 p {
 		/*font-size:16.5px;line-height:2.2;*/
@@ -96,7 +100,7 @@
 		background:#009ad6;
 		color:#fff;
 		border:none;
-		text-decoration:none;border-radius:99px;display:inline-block;margin-right:7px;
+		text-decoration:none;border-radius:99px;display:inline-block;margin-right:7px;cursor:pointer;
 	}
 	.jbbf {
 		padding:7px 12px;
@@ -105,13 +109,14 @@
 		color:#ed4c78;
 		border:none;
 		float:right;
-		text-decoration:none;border-radius:9px;display:inline-block;
+		text-decoration:none;border-radius:9px;display:inline-block;cursor:pointer;transition:0.2s;
 	}
+	.jbbf:hover {text-decoration:underline;opacity:0.7;}
 	.baobf:hover,.bibf:hover {opacity:0.6;text-decoration:none}
 	.bottom {
 		background:#4c4c4c;
 		color:#fff;
-		line-height:1.3;
+		line-height:1.5;
 		text-align:center;
 		padding:22px 0;
 		margin-top:15px;
@@ -121,20 +126,55 @@
 		font-size:14.5px;
 		color:#8c98a4;
 		margin-top:0px;
+		cursor:default;
 	}
 	.baobfbt {
 		background:#fff;
 		border: 1px solid rgba(231, 234, 243, 0.7);
 		box-shadow:0rem 0.375rem 0.75rem rgba(140, 152, 164, 0.075);
 		border-radius:10px;
-		padding:20px 30px;
+		
 		cursor:pointer;
+		position:relative;
+		
 	}
 	.time {line-height:1.2;font-weight:bold;color:#8c98a4;padding:5px 0;}
 	.bt {line-height:1.2;color:#000;font-weight:bold;padding:5px 0;}
 	.data {float:right;padding:5px 10px;border-radius:100px;color:#ed4c78;background:rgba(237, 76, 120, 0.1);}
 	.baospbf {padding:10px 0}
 	.sy {line-height:2.2;}
+	.bikan {position:absolute;left:0;top:0;}
+	.caidan {
+		position:absolute;
+		right:10px;
+		top:22.5px;
+	}
+	.caidanlanmu {
+		display:none;
+		background:rgba(0, 0, 0, 0.8);
+		position:absolute;
+		top:40px;right:0;z-index:20;
+		width:auto;
+		border-radius:10px;
+		overflow:hidden;
+	}
+	.ccdi {
+		text-align:center;
+		line-height:2.6;
+		text-decoration:none;
+		font-size:16px;
+		color:#fff;
+		display:block;
+		min-width:160px;
+		padding:0 10px;
+		margin:5px;
+		transition:0.2s;
+		border-radius:8px;
+	}
+	.ccdi:hover {
+		background:#3793FF;
+		color:#fff;
+	}
 </style>
 <script> 
 $(document).ready(function(){
@@ -205,6 +245,12 @@ $(".sp17").click(function(){
 $(".sp18").click(function(){
     $(".sp18s").fadeToggle("slow");
 });
+$(".baobf").click(function(){
+    alert('此视频暂不支持使用BaoVideo播放');
+});
+$(".caidan").click(function(){
+    $(".caidanlanmu").slideToggle("slow");
+});
 });
 </script>
 <title>BaoVideo - 首页</title>
@@ -212,8 +258,15 @@ $(".sp18").click(function(){
 <body>
 <div class="spride_container_TOP">
 	<div align="center">
-		<div class="spride_container_ROUND_1">
+		<div class="spride_container_ROUND_1" style="position:relative;">
 			<p style="color:#fff;padding:20px 10px;"><img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAgvYH_sgYopObwoQYw4AU4Yw.png" height="26px"/><span class="sjb beta">手机版</span><span class="dnb beta">电脑版</span></p>
+			<div class="caidan">
+				<img style="cursor:pointer;" src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAgkcmEswYooPKGyAQwIjgi.png" height="25px">
+				<div class="caidanlanmu">
+					<a href="/about.html" class="ccdi">关于学习宝视频中心</a>
+					
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -223,8 +276,128 @@ $(".sp18").click(function(){
 		<div class="spride_container_ROUND_2">
 
 
+
+<div class="baospbf">
+				<div class="baobfbt sp18">
+					<p class="time">2022-08-15</p><p class="bt">学习宝成员（最后？）一次会晤<span class="data">全网 1,882次播放</span></p>
+					<div class="baobffs sp18s">
+						<p class="sy">出镜人员：全体成员（未到的除外）</p>
+						<p>拍摄剪辑：-</p>
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1iT411A7RB" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+<div class="baospbf">
+				<div class="baobfbt sp17">
+					<p class="time">2022-06-05</p><p class="bt">来自学习宝的高考祝福<span class="data">全网 485次播放</span></p>
+					<div class="baobffs sp17s">
+						<p class="sy">出镜人员：-</p>
+						<p>拍摄剪辑：-</p>
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1AY4y157R6" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+
+<div class="baospbf">
+				<div class="baobfbt sp16">
+					<p class="time">2022-05-31</p><p class="bt">高中毕业前最后一次男♂生♂的♂活动<span class="data">全网 1,236次播放</span></p>
+					<div class="baobffs sp16s">
+						<p class="sy">出镜人员：-</p>
+						<p>拍摄剪辑：-</p>
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1nZ4y1472f" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+
+<div class="baospbf">
+				<div class="baobfbt sp15">
+					<p class="time">2022-05-24</p><p class="bt">普通高中自习课摸鱼被逮实录<span class="data">全网 831次播放</span></p>
+					<div class="baobffs sp15s">
+						<p class="sy">出镜人员：-</p>
+						<p>拍摄剪辑：-</p>
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1pa411E7T8" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+<div class="baospbf">
+				<div class="baobfbt sp14">
+					<p class="time">2022-05-15</p><p class="bt">某中学惊现神秘生物！<span class="data">全网 1,198次播放</span></p>
+					<div class="baobffs sp14s">
+						<p class="sy">出镜人员：-</p>
+						<p>拍摄剪辑：-</p>
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV13Z4y187vU" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+
+<div class="baospbf">
+				<div class="baobfbt sp13">
+					<p class="time">2022-04-01</p><p class="bt">刀哥深夜祝福高三9班学子高考顺利<span class="data">全网 3,108次播放</span></p>
+					<div class="baobffs sp13s">
+						<p class="sy">出镜人员：关瑞生（付费出场）</p>
+						<p>拍摄剪辑：-</p>
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1ya411473u" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+
+<div class="baospbf">
+				<div class="baobfbt sp12">
+					<p class="time">2022-03-16</p><p class="bt">长春高中生的封城疯事<span class="data">全网 563次播放</span></p>
+					<div class="baobffs sp12s">
+						<p class="sy">出镜人员：-</p>
+						<p>拍摄剪辑：-</p>
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1Pa411875y" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+
+<div class="baospbf">
+				<div class="baobfbt sp11">
+					<img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAgsL2EswYo-4bnigYwhAE4hQE.png" class="bikan">
+					<p class="time">2022-03-08</p><p class="bt">不用烟 吐烟圈教程<span class="data">全网 50,274次播放</span></p>
+					<div class="baobffs sp11s">
+						<p class="sy">出镜人员：凡</p>
+						<p>拍摄剪辑：-</p>
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1mY411g7wq" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+
+<div class="baospbf">
+				<div class="baobfbt sp10">
+					<p class="time">2022-02-15</p><p class="bt">元宵节快乐，速速进群唠嗑！<span class="data">全网 544次播放</span></p>
+					<div class="baobffs sp10s">
+						<p class="sy">出镜人员：-</p>
+						<p>拍摄剪辑：-</p>
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1WT4y1X7Td" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+<div class="baospbf">
+				<div class="baobfbt sp9">
+					<p class="time">2022-02-09</p><p class="bt">摆烂人做摆烂饭<span class="data">全网 735次播放</span></p>
+					<div class="baobffs sp9s">
+						<p class="sy">出镜人员：-</p>
+						<p>拍摄剪辑：-</p>
+						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1iZ4y1R7RS" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
+					</div>
+				</div>
+			</div>
+
+
 <div class="baospbf">
 				<div class="baobfbt sp8">
+					<img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAgsL2EswYo-4bnigYwhAE4hQE.png" class="bikan">
 					<p class="time">2022-01-10</p><p class="bt">高中摆烂人 2 之西电东输<span class="data">全网 15,369次播放</span></p>
 					<div class="baobffs sp8s">
 						<p class="sy">出镜人员：-</p>
@@ -237,6 +410,7 @@ $(".sp18").click(function(){
 
 <div class="baospbf">
 				<div class="baobfbt sp7">
+					<img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAgsL2EswYo-4bnigYwhAE4hQE.png" class="bikan">
 					<p class="time">2021-12-16</p><p class="bt">高中摆烂人图鉴<span class="data">全网 291,637次播放</span></p>
 					<div class="baobffs sp7s">
 						<p class="sy">出镜人员：-</p>
@@ -259,7 +433,7 @@ $(".sp18").click(function(){
 				<div class="baobfbt sp5">
 					<p class="time">2021-12-14</p><p class="bt">震惊！我在学校里遇见丧尸了？<span class="data">全网 1,367次播放</span></p>
 					<div class="baobffs sp5s">
-						<p class="sy">出镜人员：-</p>
+						<p class="sy">出镜人员：解说马尧 JIE, Shuo Mayao</p>
 						<p>拍摄剪辑：-</p>
 						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1nr4y1D7LQ" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
 					</div>
@@ -267,7 +441,7 @@ $(".sp18").click(function(){
 			</div>
 			<div class="baospbf">
 				<div class="baobfbt sp4">
-					<p class="time">2021-12-10</p><p class="bt">欢乐学习人 4（学习人的破防时刻）<span class="data">全网 1,593次播放</span></p>
+					<p class="time">2021-12-10</p><p class="bt">欢乐学习人 4 之学习人的破防时刻<span class="data">全网 1,593次播放</span></p>
 					<div class="baobffs sp4s">
 						<p class="sy">出镜人员：-</p>
 						<p>拍摄剪辑：-</p>
@@ -277,7 +451,7 @@ $(".sp18").click(function(){
 			</div>
 			<div class="baospbf">
 				<div class="baobfbt sp3">
-					<p class="time">2021-12-08</p><p class="bt">欢乐学习人 3（独立宣言限定）<span class="data">全网 1,502次播放</span></p>
+					<p class="time">2021-12-08</p><p class="bt">欢乐学习人 3 之独立宣言限定<span class="data">全网 1,502次播放</span></p>
 					<div class="baobffs sp3s">
 						<p class="sy">出镜人员：-</p>
 						<p>拍摄剪辑：-</p>
@@ -299,7 +473,7 @@ $(".sp18").click(function(){
 				<div class="baobfbt sp1">
 					<p class="time">2021-12-08</p><p class="bt">欢乐内卷人 1<span class="data">全网 2,033次播放</span></p>
 					<div class="baobffs sp1s">
-						<p class="sy">出镜人员：-</p>
+						<p class="sy">出镜人员：董彦伯</p>
 						<p>拍摄剪辑：-</p>
 						<p><button class="baobf">BaoVideo播放</button><a href="https://www.bilibili.com/video/BV1th411x7P8" target="_blank"><button class="bibf">哔哩哔哩播放</button></a><a href="report.html" target="_blank"><button class="jbbf">举报视频</button></a></p>
 					</div>
@@ -311,8 +485,8 @@ $(".sp18").click(function(){
 		</div>
 	</div>
 </div>
-<div class="bottom">BaoVideo 春潮信息化中心版权所有 <br/>
-Space support by Kaisu Technology and Qiniu Cloud. Services by Alibaba Cloud
+<div class="bottom">学习宝视频中心<br/>
+Space Support by Ksust and Qiniu Cloud. Services by Alibaba Cloud
 
 <!--简介[About Us] BaoVideo是学习宝自营视频平台，通过平台聚合和视频自存储，让用户享受高质量的在线视频播放服务。。--></div>
 </body>
