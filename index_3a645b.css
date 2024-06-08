@@ -1,0 +1,104 @@
+* {
+	/*margin:0;padding:0;*/
+	font-family:Microsoft Yahei UI,PingFang SC,sans-serif;
+	font-size:18px;
+}
+::selection {
+	background:rgba(252, 218, 213, 0.8);color:#000;text-shadow:none;
+}
+.layui-nav {
+	border-radius:0;
+	background:rgba(0, 0, 0, 0.5);
+	position:absolute;top:0;width:100%;z-index:20;
+}
+
+
+@media(min-width:764px) {
+	.phone-container-nav {
+		float:right;
+	}
+	.layui-nav-item {
+		display:inline-block !important;
+	}
+	.layui-nav-child {border-radius:10px;overflow:hidden;}
+	dd a{color:#4a4a4a!important;}
+	dd a:hover {background:#e0e0e0!important;color:#000!important;}
+	.layui-nav-item:hover  {
+	/*border-color:#0080ff;*/
+	}
+	.active {border-color:#0080ff !important;}
+	.lbtimg {
+		width:100%;
+	}
+	.yembt {background-size:100%;}
+}
+
+
+@media(max-width:764px) {
+	.layui-nav {font-size:18px}
+	.phone-container-nav {
+		background:rgba(0, 0, 0, 0.5);
+		z-index:10;
+		position:absolute;
+		right:0px;
+		top:64px;
+		width:200px;
+		display:none;
+	}
+	div.layui-nav-item {
+		display:block !important;
+		text-align:center;border:none!important;
+	}
+	.layui-nav-child {
+		position:static;
+		border-radius:0;
+		background:none;
+		box-shadow:none;
+		border:none;
+	}
+	dd a {color:#fff !important;}
+	dd a:hover {background:#0080ff!important;color:#fff;}
+	.layui-nav-item:hover a.r1  {
+	color:#0080ff!important;
+	}
+	.layui-nav-item.active a.r1{color:#0080ff!important;}
+	.lbtimg {
+		height:100%;
+	}
+	.navcd {
+		position:absolute;
+		top:17px;
+		right:25px;
+		height:26px;width:26px;
+		background:none;
+		background-image:url(https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAgkcmEswYooPKGyAQwIjgi.png);background-size:100% 100%;z-index:30;
+		cursor:pointer;
+	}
+	.yembt {background-size:auto 100%;}
+}
+
+div.layui-nav-item {border-bottom: 3px solid rgba(0, 0, 0, 0);transition:0.2s}
+div.layui-nav-item a.r1 {
+	font-size:16px !important;color:rgba(256, 256, 256, 1.0)!important;
+}
+dd {padding:2px 0;}
+dd a{font-size:16px!important;}
+.logo {padding:14px 0;height:36px}
+
+.ccqcbt {
+	background-image:url(https://1.s140i.faiscm.com/2/AIwBCAAQAhgAIL7-4e8FKOXzpdgHMPAuOKAf.jpg);
+}
+.yembt {
+	padding:20vh 20px;
+	color:#fff;
+	
+	background-position:center center;
+	text-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);
+	letter-spacing:0.5em;
+}
+
+
+.autoxx {
+	padding:50px 30px;line-height:2.5;
+}
+.autoxx p {padding:10px 0;font-size:16px;color:#5a5a5a;text-indent:2em;}
