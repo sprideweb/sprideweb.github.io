@@ -175,6 +175,32 @@
 		background:#3793FF;
 		color:#fff;
 	}
+	.adzz {
+		display:none;
+		position:fixed;left:0;top:0;
+		width:100vw;height:100vh;
+		background:rgba(0, 0, 0, 0.7);z-index:9999;
+		user-select:none;
+	}
+	.adzz img.ad {
+		position:absolute;
+		left:50%;top:50%;transform:translate(-50%,-50%);
+		width:350px;
+		border-radius:10px;
+	}
+	.adzz p {
+		color:#000;font-size:14.5px;
+		position:absolute;
+		bottom:10vh;
+		font-weight:bold;
+		left:50%;transform:translate(-50%);
+	}
+	.adzz p span {
+		background:#00FA9A;
+		padding:8px 15px;
+		border-radius:100px;
+		cursor:pointer;
+	}
 </style>
 <script> 
 $(document).ready(function(){
@@ -256,6 +282,30 @@ $(".caidan").click(function(){
 <title>BaoVideo - 首页</title>
 </head>
 <body>
+	<div class="adzz" id="ad">
+		<a href="/download/" target="_blank"><img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAghoelswYooNX2xwYwkAU4gwU.png" class="ad" /></a>
+		<p onclick="hideAd();"><span>关闭广告</span></p>
+	</div>
+	<script type="text/javascript">
+		var adTimer;
+
+// 显示广告的函数
+function showAd() {
+  document.getElementById('ad').style.display = 'block';
+}
+
+// 隐藏广告并设置重新显示的函数
+function hideAd() {
+  document.getElementById('ad').style.display = 'none';
+  clearTimeout(adTimer); // 清除之前的定时器
+  setTimeout(showAd, 2000); // 3秒后再次显示广告
+}
+
+// 页面加载完成后立即显示广告
+window.onload = function() {
+  showAd();
+};
+	</script>
 <div class="spride_container_TOP">
 	<div align="center">
 		<div class="spride_container_ROUND_1" style="position:relative;">
