@@ -1,217 +1,104 @@
+
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-<link href="https://www.uor.edu.cn/favicon.ico" rel="shortcut icon"/>
-<script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.net/popper.js/1.15.0/umd/popper.min.js"></script>
-<script src="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<title>加载中...</title>
-<style type="text/css">
-#indexbox,#pagebox,#newsbox {display:none;}
-#pageright-content {min-height:1px;}
-</style>
-</head>
-<body>
-<!--
-<div class="alert bg-danger text-light alert-dismissible" style="margin:0;">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-</div>
--->
-
-<div id="topbox">
-  <nav class="navbar navbar-expand bg-spride navbar-light">
-    <div class="container">
-      <a class="navbar-brand"><img src="https://13511974.s21i.faiusr.com/4/10/ABUIABAEGAAg-tm_rgYokJe0xQcwnAI4aA.png"/><span class="navbar-brand-smallfont"></span></a>
-        <ul class="navbar-nav">
-          <li class="nav-item hvr-underline-from-center">
-            <a class="nav-link" href="#/">首页</a>
-          </li>
-          <li class="nav-item hvr-underline-from-center">
-            <a class="nav-link" href="#/page/about/index">关于我们</a>
-          </li>
-          <li class="nav-item hvr-underline-from-center">
-            <a class="nav-link" href="#/page/products/idaojia">我们的产品</a>
-          </li>
-          <li class="nav-item hvr-underline-from-center">
-            <a class="nav-link" href="#/page/services/we-media">我们的业务</a>
-          </li>
-        </ul>
-    </div>
-  </nav>
-</div>
-
-
-<div id="loadingbox">
-  <div class="jindutiao">
-    <span style="animation:jiazailogo 0.01s linear;"></span>
-  </div>
-  <!--IF loadingTime>500
-    <div class="loadingZZ"></div>
-  -->
-  <div class="animbox">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-  </div>
-  <p>Loading...</p>
-  <!--<p>网站维护中....<br/>预计完成时间：年月日</p>-->
-</div>
-<div id="indexbox">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <br/><div class="card">
-          <div class="card-body home_intro">
-            <br/><br/><br/>
-            <h1 style="font-size:35px;cursor:text;font-family:sans-serif;">数智化新质生产力服务商</h1>
-            <br/>
-            <p><button class="btn btn-0080ff hvr-shutter-out-horizontal btn-lg" onclick="window.location.href='#/page/about/index'">&nbsp;&nbsp;&nbsp;了解更多&nbsp;&nbsp;&nbsp;</button></p>
-            <br/><br/><br/>
-          </div> 
+    <head>
+        <meta name="referrer" content="always">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="shortcut icon" href="https://static.yximgs.com/s1/i/favicon-eb2e5f4482.ico" type="image/x-icon">
+        <title>春潮网络</title>
+        <link href="https://static.yximgs.com/static/pages/index/index/index-9a3ec00a.css" rel=stylesheet>
+    </head>
+    <body id=body-wrap class="home">
+        <div class="com-header-wrap com-header-wrap-home">
+            <div class="com-header">
+                <div class="header-home">
+                    <h1 class="header-home-2">春潮网络</h1>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-8">
-
-
-        
-
-        <br/>
-
-        <div class="card newslink-i">
-          <div class="card-header">新闻资讯<morebutton data-toggle="tooltip" data-placement="bottom" title="更多" onclick="lH('#/page/list/category/xwzx');"></morebutton></div>
-          <div class="card-body news-listbox-xwzx control-height">
-           
-            
-
-          </div> 
+        <div class=com-body>
+            <div class=com-main-wrap>
+                <div class=com-main>
+                    <div class=home-wrap>
+                        <div class="video-wrap main-item">
+                            <h2>发现真实有趣的世界</h2>
+                            <p>不同的地方、不同的人生</p>
+                            <p>同样真实有趣的活着</p>
+                            <ul class=video-list>
+                                <li id=video1>
+                                    <div class=mask></div>
+                                    <div class="border hide"></div>
+                                    <div class=play></div>
+                                    <div class="pause hide"></div>
+                                </li>
+                                <li id=video2>
+                                    <div class=mask></div>
+                                    <div class="border hide"></div>
+                                    <div class=play></div>
+                                    <div class="pause hide"></div>
+                                </li>
+                                <li id=video3>
+                                    <div class=mask></div>
+                                    <div class="border hide"></div>
+                                    <div class=play></div>
+                                    <div class="pause hide"></div>
+                                </li>
+                            </ul>
+                            <div class=video-phone></div>
+                        </div>
+                        <div class="pic-wrap main-item">
+                            <h2>忠于自我，并不孤独</h2>
+                            <p>拒绝平庸乏味、虚伪矫情，做独一无二、坦荡无畏的自己</p>
+                            <p>我深信，我并不是孤独的一个人</p>
+                            <div class=pic>
+                                <div class="pic-item pic-item-1"></div>
+                                <div class="pic-item pic-item-2"></div>
+                                <div class="pic-item pic-item-3"></div>
+                                <div class="pic-item pic-item-4"></div>
+                                <div class="pic-item pic-item-5"></div>
+                                <div class="pic-item pic-item-6"></div>
+                                <div class="pic-item pic-item-7"></div>
+                            </div>
+                            <div class=pic-phone>
+                                <div class=star></div>
+                            </div>
+                            <div class=bg-extend></div>
+                        </div>
+                        <div class="distance-wrap main-item">
+                            <h2>同一座城，同样的心情</h2>
+                            <p>为同一道彩虹惊呼，为同一次堵车心烦</p>
+                            <p>闪闪发光的你，就在身边</p>
+                            <div class=distance-phone></div>
+                            <div class=distance-show>
+                                <div class=core></div>
+                                <div class=core-1></div>
+                                <div class=core-2></div>
+                                <div class=core-3></div>
+                                <div class=core-4></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <br/>
-        <div class="card newslink-i">
-          <div class="card-header">项目案例<morebutton data-toggle="tooltip" data-placement="bottom" title="更多" onclick="lH('#/page/list/category/xmal');"></morebutton></div>
-          <div class="card-body">
-                      
-            <!--有   内容-->
-           <br/>
-          </div> 
+        <div class=com-footer-wrap>
+            <div class="com-footer">
+                <p class="info">
+                    <span>
+                        m <span id="this-year">2018</span>
+                    </span>
+                    <span>@ All rights Reserved</span>
+                    <a class="police-link" target="_blank" href="https://beian.miit.gov.cn/"><span>浙B2-20100110-12</span></a>
+                    <span class="police-icon"></span>
+                    <a class="police-link" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020421"></a>
+                    <a id="___szfw_logo___" href="https://credit.szfw.org/CX20170803035807880399.html" target="_blank">
+                        <span class="chengxin-icon"></span>
+                    </a>
+                </p>
+                <p class="info" style="margin-top: 10px;"><span></span></p>
+            </div>
         </div>
-
-
-        
-
-
-
-      </div>
-
-
-      <div class="col-md-4"><br/>
-        <div class="card newslink-i">
-          <div class="card-header">信息公开<morebutton data-toggle="tooltip" data-placement="bottom" title="更多" onclick="lH('#/page/list/category/xxgk');"></morebutton></div>
-          <div class="card-body news-listbox-xxgk control-height">
-            
-         
-
-          </div> 
-        </div><br/>
-        <div class="card">
-          <div class="card-header">友情链接<morebutton data-toggle="tooltip" data-placement="bottom" title="更多" onclick="lH('#/page/list/category/yqlj');"></morebutton></div>
-          <div class="card-body">
-            
-          </div> 
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</div>
-<div id="pagebox">
-  <div class="container">
-    <div class="row">
-      
-      <div class="col-md-3"><br/>
-        <div class="card pageindex-leftlist">
-          <h1 id="page-title1"></h1>
-        </div>
-        <br/>
-        <div class="card">
-          <div id="leftlink-index"></div>
-        </div>
-      </div>
-
-
-      <div class="col-md-9"><br/>
-        <div class="card pageindex-rightlist">
-          <h1 id="page-title2"></h1>
-          <div id="pageright-content"></div>
-        </div>
-      </div>
-
-
-
-
-    </div>
-  </div>
-</div>
-<div id="newsbox">
-  <div class="container"><br/>
-    <p class="now-posi">&nbsp;当前位置：网站首页 / <span id="now-category">新闻资讯</span> / <span id="now-title">新闻详情页</span></p>
-    <div class="row">
-      
-      <div class="col-md-12">
-        <div class="newsbox">
-          <div class="newsbox-top">
-            <h1 id="news-title"></h1>
-            <p>来源：<span id="news-author"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间：<span id="news-time"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击数：</p>
-          </div>
-          <br/>
-          <div class="newsbox-content" id="news-content"></div> 
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="jumbotron" id="bottombox">
-  <center><p>Copyright © 2020-2023 春潮文化 All right Reserved.&nbsp;&nbsp;icp备案号：吉ICP备11029385号<br/>技术支持：宏润智能</p></center>
-</div>
-
-
-
-<script type="text/javascript" src="setting.js"></script>
-<script type="text/javascript">
-  window.addEventListener('load', hashChange);
-  window.addEventListener('hashchange', hashChange);
-</script>
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
-</script>
-<script type="text/javascript">
-  window.addEventListener('DOMContentLoaded', (event) => {
-    const hash = window.location.hash;
-    if (!hash || hash === '') {
-      history.replaceState(null, null, '#/');
-    }
-  });
-</script>
-<script type="text/javascript">
-  if (window.location.href === 'https://spride.asia/index.html') {
-    window.location.href = 'https://spride.asia/';
-  }
-  if (window.location.href === 'https://spride.asia/index.html#/') {
-    window.location.href = 'https://spride.asia/';
-  }
-  if (window.location.href === 'https://spride.asia/index.html#') {
-    window.location.href = 'https://spride.asia/';
-  }
-</script>
-</body>
+    </body>
 </html>
