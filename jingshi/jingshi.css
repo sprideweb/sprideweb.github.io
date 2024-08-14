@@ -1,4 +1,4 @@
-* {margin:0;padding:0;font-family:Microsoft Yahei UI,sans-serif;}
+* {margin:0;padding:0;font-family:PingFang SC,Microsoft Yahei UI,sans-serif;}
 nav {padding:0!important;position:relative;}
 .Large {
 	width:1200px;text-align:left;
@@ -168,9 +168,11 @@ a.n {text-decoration:none!important;} a.n:hover {text-decoration:none!important;
             }
 
       ::selection {
-    background-color: rgba(179, 215, 252, 0.8);
-    color: inherit;
-} /*background-color:#cce2ff;color:rgba(0,0,0,.87)*/
+   /* background-color: rgba(179, 215, 252, 0.8);
+    color: inherit;*/
+	      background-color: #cce2ff;
+    color: rgba(0,0,0,.87);
+} 
 #zzhash2 {color:rgba(0, 0, 0, 0.6);font-size:14.5px;margin-right:10px;text-align:right;}
 #zzhash2 a{color:blue;text-decoration:none;cursor:pointer;}
 #zzhash2 a:hover {color:red;text-decoration:underline;}
