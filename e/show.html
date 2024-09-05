@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
-<title>show.html</title>
+<title>春潮传媒信息化办公室</title>
 </head>
-<body>
+<body id="body1">
 <div id="load">
 	<center><br/><br/><br/><br/><br/><br/><br/>加载中...</center>
 </div>
@@ -24,7 +24,7 @@
 		<div class="showright">
 			<div id="showindex">
 				<h1 id="showtitle"></h1>
-				<p id="dte_1" class="dte">发布时间：<span id="showdate"></span>&nbsp;&nbsp;&nbsp;发布人：<span id="showauthor"></span>&nbsp;&nbsp;&nbsp;&nbsp;【<a href="javascript:;" onclick="alert('');">打印本页</a>&nbsp;&nbsp;<a href="javascript:window.close();">关闭</a>】
+				<p id="dte_1" class="dte">发布时间：<span id="showdate"></span>&nbsp;&nbsp;&nbsp;发布人：<span id="showauthor"></span>&nbsp;&nbsp;&nbsp;&nbsp;【<a href="javascript:;" onclick="window.print();">打印</a>&nbsp;&nbsp;<a href="javascript:;" onclick="window.close();">关闭</a>&nbsp;<a href="javascript:;" onclick="sc_big();">大字</a>&nbsp;<a href="javascript:;" onclick="sc_sm();">重置</a>&nbsp;<a href="javascript:;" onclick="sc_huy();">护眼</a>】
 					<div id="showcontent"></div>
 			</p>
 			</div>
@@ -40,5 +40,25 @@
 </div>
 
 <script type="text/javascript" src="show.js"></script>
+<script type="text/javascript">
+function sc_big() {
+	document.getElementById("showcontent").style.fontSize = "22px";
+	document.getElementById("showcontent").style.lineHeight = "1.2";
+}
+function sc_sm() {
+	document.getElementById("showcontent").style.fontSize = "";
+	document.getElementById("showcontent").style.lineHeight = "";
+	document.getElementById("showcontent").style.color = "";
+	document.getElementById("showcontent").style.backgroundColor = "";
+	document.getElementById("body1").style.backgroundColor = "";
+	document.getElementById("finish").style.backgroundColor = "";
+}
+function sc_huy() {
+	document.getElementById("showcontent").style.color = "#006000";
+	document.getElementById("showcontent").style.backgroundColor = "#DFFFDF";
+	document.getElementById("body1").style.backgroundColor = "#DFFFDF";
+	document.getElementById("finish").style.backgroundColor = "#DFFFDF";
+}
+</script>
 </body>
 </html>
