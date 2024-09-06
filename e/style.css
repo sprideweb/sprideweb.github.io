@@ -1,8 +1,7 @@
-/*LU: 202409021431*/
 * {
 	margin: 0;
 	padding: 0;
-	font-family: Tahoma, SimSun;
+	font-family: Times New Roman,SimSun;
 }
 #finish {
 	display: none;
@@ -93,15 +92,16 @@ li a.active {
 }
 .dlenews_mid a:hover {
 	color: red;
+	border-bottom: 1px dashed red;
 	
 }
 .dlenews_mid h1 {
 	text-align: center;
-	line-height: 2;
+	line-height: 2.5;
 	font-size: 22px;
 }
 .dlenews_mid p {
-	line-height: 1.5;
+	line-height: 1.8;
 	font-size: 14.5px;
 }
 .dlenotice {
@@ -203,4 +203,9 @@ li a.active {
 #showcontent a:hover {
 	color: red;
 	background: #f0f0f0;
+}
+rd {
+	font-size: 16px;
+	font-family: Tahoma,微软雅黑;
+	font-weight: bold;
 }
