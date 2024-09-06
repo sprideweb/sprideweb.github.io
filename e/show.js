@@ -1,9 +1,9 @@
 document.getElementById("load").style.display = "none";
 document.getElementById("finish").style.display = "block";
 document.getElementById("topjs").innerHTML = "<img src=\"https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg35rdtgYojuTvoAcwvgo45QE.png\" width=\"100%\" style=\"vertical-align: bottom;\" /><ul><li><a href=\"index.html\">网站首页</a></li><li><a href=\"show.html?sid=47\">关于本网</a></li><li><a href=\"show.html?sid=44\">邮箱申领</a></li><li><a></a></li></ul>";
-document.getElementById("bottomjs").innerHTML = "<br/><div class=\"dbottom\"><br/><p>版权所有 Copyright (c) 2020- 2022 春潮网·信息化网 all right reserved.<br/> 春潮网信息化办主办 地址：长春市清华路818号 <br/>网站备案号：内部(2020)07号 吉ICP备34712870号-6 监管：吉林省网信办</p></div>";
-document.getElementById("xxhjsdt").innerHTML = "<h1><a href=\"https://www.gov.cn//xinwen/2022-06/30/content_5698573.htm\" target=\"_blank\">习近平：更好把握和运用党的百年奋斗历史经验</a></h1><p><a href=\"https://www.gov.cn//xinwen/2022-06/30/content_5698570.htm\" target=\"_blank\">习近平6月30日下午乘专列抵达香港</a></p><p><a href=\"https://www.gov.cn//xinwen/2022-06/24/content_5697602.htm\" target=\"_blank\">新华时评：保护黑土地就是保护每个人的饭碗</a></p><p><a href=\"https://www.gov.cn//xinwen/2022-06/24/content_5697417.htm\" target=\"_blank\">金砖国家领导人第十四次会晤举行 习近平主持会晤并发表重要讲话</a></p>";
-document.getElementById("gonggao").innerHTML = "<a href=\"show.html?sid=69\">关于春潮网域名变更的公告</a>";
+document.getElementById("bottomjs").innerHTML = "<br/><div class=\"dbottom\"><br/><p>版权所有 Copyright (c) 2020- 2022 春潮信息化网 all right reserved.<br/> 【春潮信息化办公室主办】 地址：长春市清华路818号 <br/>网站备案号：内部(2020)07号 吉ICP备34712870号-6（正在申请中） 技术反馈邮箱：</p></div>";
+document.getElementById("xxhjsdt").innerHTML = "<h1><a href=\"https://www.gov.cn//xinwen/2021-02/12/content_5586934.htm\" target=\"_blank\">国际奥委会主席巴赫向习近平致新春贺函</a></h1><p><a href=\"https://www.gov.cn//xinwen/2021-02/09/content_5586367.htm\" target=\"_blank\">习近平：要坚持共商共建、务实均衡、开放包容、创新进取的合作原则</a></p><p><a href=\"https://www.gov.cn//xinwen/2021-01/11/content_5578940.htm\" target=\"_blank\">省部级主要领导干部学习贯彻党的十九届五中全会精神专题研讨班开班</a></p><p><a href=\"https://www.gov.cn//xinwen/2021-01/11/content_5578937.htm\" target=\"_blank\">习近平就印度尼西亚客机失事向印尼总统佐科致慰问电</a></p><p><a href=\"https://www.gov.cn//xinwen/2020-12/31/content_5575834.htm\" target=\"_blank\">中俄两国元首互致新年贺电 中俄两国总理互致新年贺电</a></p><p><a href=\"https://www.gov.cn//xinwen/2020-12/19/content_5571288.htm\" target=\"_blank\">郭声琨主持召开中央政法委员会全体会议学习贯彻习近平总书记重要讲话和中...</a></p>";
+document.getElementById("gonggao").innerHTML = "<a href=\"\">（空）</a>";
 const urlParams = new URLSearchParams(window.location.search);
 const aNum = urlParams.get('sid');
 0
@@ -12,11 +12,9 @@ const aNum = urlParams.get('sid');
 
 
 
-if(aNum === "69") {
-	    binfo();
-}
+
 if(aNum === "47") {
-	    binfo("关于本网","2021/10/26","Administrator","由春潮信息化办公室主办，服务数字化、信息化建设，促进网络发展。");
+	    binfo("关于本网","2021/10/26","Administrator","<h3 style=\"font-weight:normal;\">由春潮信息化办公室主办的春潮信息化网，全面服务春潮网数字化、信息化建设，发布本网动态，促进本网发展。</h3><br/><br/><center><img src=\"https://1.s140i.faiscm.com/2/AIwBCAAQAhgAIKbz1NsFKMTh5jAwgA84-gk.jpg\" width=\"82%\"/></center><br/>");
 	    dteHide();
 }
 if(aNum === "44") {
