@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.net/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<title>春潮站群网站认证</title>
+<style type="text/css">
+button {
+	border-radius: 0!important;user-select: text!important;
+}
+input:focus,.btn:focus, .btn:active:focus, .btn.active:focus,
+.btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: none!important;
+	box-shadow: none!important;
+}
+input, input:focus {
+	border-color: #e0e0e0!important;
+}
+.modal-content {border-radius: 0;}
+* {
+	margin: 0;
+	padding: 0;
+	user-select:;
+	font-family: Arial, Microsoft YaHei, sans-serif;
+}
+@media(min-width: 600px) {
+	.mcontn {
+		width: 600px;
+	}
+	.trust_main {
+		height: 824px;
+	}
+}
+@media(max-width: 600px) {
+	.mcontn {
+		width: 100%;
+	}
+	.trust_main {
+		height: 137vw;
+	}
+}
+::selection  {
+	background: #D2E9FF	;
+	color: #000;
+}
+.mcontn {
+	margin: 0 auto;
+}
+.trust_main {
+	background-image: url(https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg79TxtgYoh_TixQMw_gU4uAg.png);
+	background-size: 100% 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 30px 0;
+}
+.trust_main h1 {
+	font-size: 34px;
+	line-height: 4.3;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	color: #7f7f7f;
+}
+.trust_main p {
+	width: 100%;
+	margin: 0;
+	padding: 0 15%;
+	line-height: 2.2;
+	font-size: 16.5px;
+	color: #3c3c3c;
+	user-select: ;
+}
+.trust_main p span {
+	user-select: text;
+}
+.card {
+	margin: 10px 30px;
+}
+kx::after {
+	content: '安全网站';
+	color: #1d953f;
+}
+wx::after {
+	content: '风险网站';
+	color: #ce0000;
+}
+img.title {
+	width: 60%;
+	user-select: none;
+}
+.tiaon {
+	display: inline-block;
+	border: 1px solid #e0e0e0;
+	background: #fff;
+	font-size: 16px;
+	padding: 6px 10px;
+	border-radius: 6px;
+	color: #5b5b5b;
+	line-height: 1!important;
+	cursor: pointer;
+}
+.tiaon:hover {
+	background: #0080ff;
+	border-color: #0080ff;
+	color: #fff;
+}
+button {
+	transition: all 0s!important;
+}
+.linkspan {
+	cursor: pointer;
+	color: #0080ff;
+}
+.linkspan:hover {
+	color: darkblue;
+}
+.alert {
+	margin: 50px 30px;
+}
+#wan1, #wan2 {
+	display: none;
+}
+a.nav-link {line-height: 1;}
+.jumbotron {
+	margin: 20px;
+	background: #f3f4ff;
+	border: 1px solid #f0f0f0;
+	border-radius: 0;
+}
+.jumbotron h1 {
+	text-align: center;
+	font-size: 30px;
+}
+.modal-header {
+	border-radius: 0;
+	background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+	padding: 0 30px;
+	font-size: 20px;
+	color: #fff;
+	line-height: 2.5;
+}
+.modal-body {
+	padding: 0 30px;
+	font-size: 16px;
+	line-height: 2;
+}
+.btn-search {
+	background: #45b97c;
+	color: #fff;
+}
+.btn-search:hover {
+	background: #1d953f	;
+	color: #fff;
+}
+img {user-select: none;}
+img.eviflogo {
+	width: 450px;
+	max-width: 55%!important;
+}
+input {height: 48px!important;border-radius: 0!important;}
+nav {background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);}
+.bottom {
+	background:#f0f0f0;
+ font-family: PingFang SC!important;
+	color: #6f6f6f;
+	font-size: 14.5px;
+	padding: 20px 10%;
+	line-height: 1;
+	margin: 0;
+}
+.bottom a {font-family: PingFang SC!important;}
+.bottom a:hover {
+	background: #f0f0f0;
+	color: red;
+	text-decoration: none;
+}
+.modal-dialog {
+	width: 100%;
+	height: 90vh;
+}
+.modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.modal-close2 {
+	color: #fff;
+	background: #5b5b5b;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1;
+	padding: 6px 9px;
+	border-radius: 100px;
+	position: absolute;
+	right: -13px;
+	top: -10px;
+	cursor: pointer;
+	border: 1px solid rgba(0, 0, 0, .2);
+}
+.modal-close2 clo::after {
+	content: 'X';
+}
+.modal-close2:hover {
+	background: #8f8f8f;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="verify"><img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg9P7ztgYokMCV2QYwugY4SQ.png" height="18px" /></a>
+    </li>
+  </ul>
+</nav>
+<div class="mcontn">
+	<div class="trust_main" id="main">
+		<center><img class="title" src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgy9jxtgYo4KOYrwEwgAU4_wI.png"/></center>
+		<h1 id="1_kxwz">未知网站</h1>
+		<p>备案名称：<span id="1_wzmc">未知</span></p>
+		<p>可信编号：<span id="1_kxbh"></span></p>
+		<p>主页地址：<span id="1_wzdz" class="linkspan" onclick="linS();">未知</span></p>
+		<p>网站类别：<span id="1_wzzt">未知</span></p>
+		<p>管理人员：<span id="1_glry">未知</span></p>
+		<p style="position: relative;">风险记录：<span class="tiaon dropdown-toggle" data-toggle="modal" data-target="#fxxx_dp"><span id="1_fxxx">1</span>条</span></p>
+		<p style="text-align: right;">&nbsp;<br/>春潮网站可信验证中心<br/>颁 发</p>
+	</div>
+	<div class="modal" id="fxxx_dp">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-close2" data-dismiss="modal"><clo></clo></div>
+				<div class="modal-header" id="sheid"></div>
+				<div class="modal-body">
+					<div id="fxxx_wz"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="alert alert-danger" id="wan2">未找到此编号的可信证书。</div>
+	
+</div>
+
+<div class="jumbotron" id="wan1">
+	<div class="mcontn">
+		<center><img class="eviflogo" src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg5en0tgYohtn7rgYw7gU4owE.png" /><br/><br/><br/></center>
+	 <form class="" style="">
+	 	 <div class="input-group mb-3">
+    <input type="text" class="form-control" name="siteid" placeholder="输入网站识别码查询">
+    <div class="input-group-append">
+      <button class="btn btn-search" style="height: 48px!important" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 19 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg></button>  
+     </div>
+  </div>
+	 	
+	 	
+	 </form>
+	</div>
+</div>
+
+<p class="bottom">© 2024 可信网站验证中心 <a href="show.html?sid=102">关于我们</a></p>
+
+<script type="text/javascript">
+const getURL = new URLSearchParams(window.location.search);
+const getID = getURL.get('siteid');
+if(getID === null || getID === '') {
+	document.getElementById('main').style.display = 'none';
+	document.getElementById('wan1').style.display = 'block';
+}
+document.getElementById('1_kxbh').innerText = getID;
+
+function infoIn(x1,x2,x4,x5,x6,x7,x8) {
+	document.getElementById('1_kxwz').innerHTML = x1;
+	document.getElementById('1_wzmc').innerText = x2;
+	document.getElementById('1_wzdz').innerText = x4;
+	document.getElementById('1_wzzt').innerText = x5;
+	document.getElementById('1_glry').innerText = x6;
+	document.getElementById('1_fxxx').innerText = x7;
+	document.getElementById('fxxx_wz').innerHTML = x8;
+}
+function linS() {
+	window.open('https://' + document.getElementById('1_wzdz').innerText, '_blank');
+}
+
+
+</script>
+<script type="text/javascript">
+if(getID === 'CC2001U6A') {
+	infoIn('<wx></wx>','春潮网','','-','-','-','-');
+}
+else if(getID === 'CC2007BS4') {
+	infoIn('<kx></kx>','春潮信息化网','spride.asia/e/','机构网站','选择不公示','1','1.（选择不公示）');
+}
+else if(getID === 'CC2302RJV') {
+	infoIn('<kx></kx>','惊时电子刊','spride.asia/jingshi/','阅读网站','杨*赫','0','');
+}
+else if(getID === 'CC2401WRP') {
+	infoIn('<kx></kx>','春潮网Asia','spride.asia','综合网站','选择不公示','0','');
+}
+else if(getID === 'CC2403J8C') {
+	infoIn('<kx></kx>','学习宝','spride.asia/bao/','品牌网站','选择不公示','0','');
+}
+else if(getID !== null && getID !== '') {
+	document.getElementById('main').style.display = 'none';
+	alert('未找到该编号下的可信证书，可能是由于以下原因：\n1.该证书不存在，请检查您输入的编号是否错误。\n2.该证书已吊销或自行注销。');
+	window.location.href = 'verify';
+}
+
+document.getElementById('sheid').innerText = document.getElementById('1_wzmc').innerText + '的风险记录';
+
+</script>
+</body>
+</html>
