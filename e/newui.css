@@ -164,10 +164,9 @@ li a.active {
 .showleft h4 {
 	color: #fff!important;
 	background: #0080ff!important;
-	padding: 0px!important;
-	line-height: 2.5!important;
+	padding: 15px 10px!important;
+	line-height: 1!important;
 	border: none!important;
-	user-select: none;
 	margin: 0!important;
 }
 .showleft a:hover {
@@ -216,13 +215,59 @@ li a.active {
 #showcontent a {
 	color: #0080ff;
 	text-decoration: none;
-	transition: 0.2s;
 }
 #showcontent a:hover {
-	color: #004b97;
-	border-bottom: 1px solid #004b97;
+	text-decoration: underline;
 }
-rd {
+
+ywbox {
+	display: inline-block;
+	position: relative;
+	width: 240px;
+	height: 80px;
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0);
+	color: #5f5f5f!important;
+	line-height: 1!important;
+	cursor: pointer;transition: 0.2s;
+}
+ywbox i {
+	font-size: 40px;
+	position: absolute;
+	top: 20px;
+	left: 15px;transition: 0.2s;
+}
+ywbox h1 {
+	color: #5f5f5f!important;
+	font-size: 17px!important;
+	position: absolute;
+	font-weight: normal;
+	top: 6px;
+	line-height: 1!important;
+	left: 80px;transition: 0.2s;
+}
+ywbox p {
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 13px;
+	position: absolute;
+	top: 46px;
+	left: 80px;
+	line-height: 1;transition: 0.2s;
+}
+ywbox:hover i,ywbox:hover h1,ywbox:hover p {
+	color: #0080ff!important;
+}
+iframe {
+	border: none;
+	width: 100%;
+}
+rd {color: #ea0000;}
+zy {
+	display: block;
+	padding: 20px 30px;
+	background: #f8f9ff;
+	color: rgba(0, 0, 0, 0.8);
 	font-size: 16px;
-	font-weight: bold;
+	line-height: 1.5;
+	font-family: ;
 }
