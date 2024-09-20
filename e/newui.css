@@ -74,12 +74,21 @@ li a.active {
 }
 .dbottom p {
 	text-align: center;
-	color:rgba(0, 0, 0, 0.6);
+	color:rgba(0, 0, 0, 0.8);
 	font-size: 14px;
 	line-height: 2;
 }
 .dbottom p span {
 	font-size: 14px;
+}
+.dbottom p a {
+	color: #000;
+	text-decoration: none;
+}
+.dbottom p a:hover {
+	color: #0080ff;
+	text-decoration: underline
+	;
 }
 .dindex {
 	display: flex;
@@ -270,4 +279,23 @@ zy {
 	font-size: 16px;
 	line-height: 1.5;
 	font-family: ;
+}
+
+
+.btn {
+	cursor: pointer;
+	padding: 8px 12px;
+	font-size: 14.5px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+}
+.btn:active {
+	filter: brightness(0.8);
+}
+.btn-red {
+	background: linear-gradient(to top, #ea0000, #ff0000);
+}
+.btn-red:hover {
+	background: #ce0000;
 }
