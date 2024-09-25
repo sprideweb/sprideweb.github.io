@@ -17,7 +17,7 @@ body {
 	background: #f0f0f0;
 }
 .d-box {
-	background: #fff;
+	background: linear-gradient(to top, #ecf5ff, #ecf5ff);
 	padding: 50px 0px;
 }
 .d-avatarbox {
@@ -31,7 +31,7 @@ body {
 }
 .d-infobox h1 {
 	margin: 0;
-	font-size: 40px;
+	font-size: 36px;
 	line-height: 2.5;
 	font-weight: bold;
 	display: inline-block;
@@ -39,7 +39,7 @@ body {
 }
 .row {margin: 0}
 .d-infobox span {
-	font-size: 25px;
+	font-size: 20px;
 	margin-left: -5px;
 	font-weight: normal;
 	color: #003D79;
@@ -55,7 +55,7 @@ body {
 	color: #000;
 }
 hr {
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.05);
 	margin: 0;
 }
 .report-btn {
@@ -104,7 +104,7 @@ hr {
 }
 .d-infotit {
 	background: #fff;
-	border-bottom: 2px solid #005ab5;
+	border-bottom: 0px solid #e0e0e0;
 	color: #fff;
 	font-size: 18px;
 	font-weight: bold;
@@ -113,7 +113,8 @@ hr {
 }
 .d-infotit span {
 	display: inline-block;
-	background: #005ab5;
+	color: #005ab5;
+	border-bottom: 2px solid #005ab5;
 	padding: 0 20px;
 	min-width: 100px;
 	line-height: 2.5;
