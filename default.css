@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+body {
+	background: #f0f0f0;
+}
+topbar {
+	display: block;
+	background: #0066cc;
+	line-height: 80px;
+	min-width: 900px;
+}
+.width {
+	width: 900px;
+	margin: 0 auto;
+}
+.logo {
+	display: inline-block;
+	vertical-align: top;
+	background: url(https://13511974.s21i.faimallusr.com/4/4/ABUIABAEGAAgs4ryuAYogO6GhgIwygM49gE.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 80px;
+	width: 70px;
+}
+.mob_btn {
+	background: none;
+	font-size: 14px;
+	color: #fff;
+	padding: 7.5px 15px;
+	border-radius: 100px;
+	border: 1.5px solid #fff;
+	margin: 24px 0;
+	float: right;
+	cursor: pointer;
+}
+.mob_btn:hover {
+	background: #fff;
+	color: #000;
+}
+
+midbar {
+	display: block;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	margin-top: 30px;
+}
+
+bottombar {
+	background: #e0e0e0;
+	display: block;
+	color: #272727;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 13.5px;
+}
+
+.index_news a {
+	display: block;
+	font-size: 18px;
+	line-height: 6;
+	padding: 0 20px;
+	color: #1b1b1b;
+	text-decoration: none;
+}
+.index_news a t {
+	float: right;
+	font-size: 14px;
+	color: #7f7f7f;
+	margin: 47px 0;
+}
+.index_news a:hover t {color: orange;}
+.index_news a:not(:last-child) {
+	border-bottom: 2px dotted #e0e0e0;
+}
+.index_news a:hover {
+	background: ;
+	color: orange;
+}
+.mail_address {
+	background: url(https://13511974.s21i.faimallusr.com/4/4/ABUIABAEGAAguZzyuAYozuH-eTB3OAw.png);
+	background-size: 100% 100%;
+	display: inline-block;
+	height: 10px;
+	width: 105px;
+	font-size: 11px;
+	color: rgba(0, 0, 0, 0);
+}
+.more_btn {
+	font-size: 16px;
+	color: #0080ff;
+	padding: 8px 20px;
+	border: 2px solid #0080ff;
+	line-height: 8;
+	border-radius: 100px;
+	cursor: pointer;
+}
+.more_btn:hover {
+	background: #0080ff;
+	color: #fff;
+}
