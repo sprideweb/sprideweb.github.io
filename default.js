@@ -6,6 +6,13 @@ const SK = urlParams.get('skin');
 elHide('b_load');
 elShow('b_main');
 
+addList('故乡的天空','2024','10','26');
+addList('<rd>2024新年献词：</rd>像流水一样不再回头','2023','12','31');
+addList('写在没有疫情的第一个冬天','2023','11','08');
+addList('《不止不休》：黄金年代理想主义的挽歌','2023','03','30');
+addList('葬尸湖','2023','03','23');
+addList('疫年整','2023','03','08');
+addList('<rd>2023新年献词：</rd>告别未来十年里最好的一年','2022','12','31');
 addList('当我们告别行程卡时，我们在告别什么','2022','12','13');
 addList('祝你这个冬天快乐','2022','12','09');
 addList('等待尘烟散去','2022','11','19');
@@ -53,7 +60,31 @@ case '20221209':
 	break;
 case '20221213':
 	var op = `<p>2022年12月12日0点整，通信行程卡官方微信公众号上发布了一则公告称，根据国务院联防联控机制综合组的有关要求，自12月13日零时起，正式下线“通信行程卡”服务。届时，其短信、网页、微信小程序、支付宝小程序、APP等查询渠道也将同步下线。</p><p>消息一出，迅速刷屏了各路社交软件和媒体。大家纷纷截屏留念，向这个时代特征鲜明的产物告别。</p><p>对我而言，我早已不记得它刚出现时的样子了。行程卡2020年3月6日上线，到今天关停，经历了近三年的时间。在这三年里，我早已经习惯了有它的生活，就如同48小时核酸、健康码一样。而现在，这些“特殊记忆”正一件又一件的消失在我们的生活中。</p><p>前几天返乡的航班落地长春之后，我推着行李一路畅通无阻的出了机场，心里还有几分诧异。没有查验核酸，没有扫健康码，没有落地检，这样的生活对于我而言显得陌生又熟悉。当然，我深知，陌生来自三年的记忆，而熟悉，则从更远的从前而来。</p><p>我们的生活，大概要回去了罢。</p><p>所以，更多的时候，我们大概告别的不仅仅是行程卡，还有三年的回忆和各种故事。随着疫情防控政策的调整，在可以预见的将来，将有更多“特殊时代的产物”一个个离开我们。</p><p><st>当然，从某种意义上来讲，他们的离开，便是我们的归来。归回原来的生活，归入生活的正轨，走向更广阔的世界。</st></p><p>在“#告别行程卡#”的微博话题下，网民们激动的发表着自己的见解。有人说，要感谢行程卡，感谢他们在特殊时期发挥的巨大作用。也有人冷冷的放下四个大字，“再也不见”。</p><p>我想了很久，也没有想到一句很好的话来结束这段文字。后来我想，行程卡这个东西。大概和这个国家的许多东西一样，<st>“应需而生，适时而终”</st>。</p><p>这就是行程卡和我们的故事。5分钟前，它已经结束了自己的使命。</p><alert>本文首发于春潮网，未经许可，不得转载。</alert>`;
-	basicInfo('当我们告别行程卡时，我们在告别什么','');
+	basicInfo('当我们告别行程卡时，我们在告别什么','NLS');
+	break;
+case '20221231':
+	var ox=1;
+	basicInfo('2023新年献词：告别未来十年里最好的一年','春潮编辑部');
+	break;
+case '20230308':
+	var ox=1;
+	basicInfo('疫年整','NLS');
+	break;
+case '20230323':
+	var ox=1;
+	basicInfo('葬尸湖','307');
+	break;
+case '20230330':
+	var ox=1;
+	basicInfo('《不止不休》：黄金年代理想主义的挽歌','杨二狗');
+	break;
+case '20231108':
+	var ox=1;
+	basicInfo('写在没有疫情的第一个冬天','豆腐泡杀手');
+	break;
+case '20231231':
+	var ox=1;
+	basicInfo('2024新年献词：像流水一样不再回头','春潮编辑部');
 	break;
 case '20241026':
 	var op = `<p>故乡的天空很美。何以如此说呢？或许是因为太久没有回家，时而想起故乡的时候，回忆给它加了一层美好的滤镜，或许是因为成都的天空总是灰沉沉的，让人心情也暗暗蒙上了一层阴影，从而更加想念长春那些晴朗无云的天空了吧。</p><p>我对天空有种说不出的痴迷，我很喜欢蓝天白云的一碧万顷，也钟情于黄昏时分的霞光满天。如若碰到极好的天气，不管在做什么，我总会驻足下来，用手机定格下这些独特的瞬间。</p><p>再回看拍下的这些照片，总能想到当时的情景：或是下课骑车赶去吃饭，或是在外和同学聊天散步。但家乡的天空却总显得比这里好看，上了大学之后，能够回家的时间只有每年寒暑假。每次回去，手机里留下的照片不是很多，天空却占了一大半。</p><p>高考之前的时候，有时实在学不进去了，我就喜欢望着天空发呆。透过教室的窗户，看到外面的天空由金黄变成蓝调、再慢慢变暗下去，直到完全黑天，日子就这么周而复始的过去。高考前一周，知识体系已基本定了型，我也离开了学校的二晚自习。其实，我本该去自习室继续奋战到深夜，但我每天都要去南湖公园逛一逛，每次从自由大路的小门进去，我会挑不同的路线一路走到南湖大桥下，然后走上桥，先俯瞰整个南湖，再抬起头对着天空发呆。</p><p>那正是长春初夏的时候，每天的傍晚时分，湖边总有阵阵微风吹来，我从桥的一边慢步走到另一边，望着路上川流不息的车流从我身边经过，天空此时美丽的令人着迷。我拍下了那个瞬间，直至今日仍令我难以忘怀。现在回想起来，那些平常的日子已转瞬即逝，而我的青春也随着时间的洪流踉跄地流逝了。</p><p>留恋一座城市，往往是因为在那里生活了太多年，偶然的离别，让伤感和回忆随着时间的推移变得越来越清晰。作为一个东北孩子，我已经太久没有呼吸到带着清爽沁凉感的空气，太久没有听到熟悉的东北乡音，太久没有穿梭在熟悉的大街小巷了。其实，我的内心是充满矛盾的，我深知留在家乡不会有太大的发展，家里人也说“男孩子嘛，就该出去闯一闯，去南方绝对比在长春更有发展。”于是我来到了这里，我曾以为上了大学后自己会变得更加独立和自由，可如今两年时光匆匆过去，在这两年多的时间里，我的确去过很多座城市，遇见了不同的风景，但我在如今的生活中似乎找不到一点这样的感觉：我真的已经独立自由了吗？我真的成为了自己想要成为的样子了吗？</p><p>笼中鸟，何时飞？似乎这个牢笼把我圈的更加深了。</p><p>初一的时候，那时我还不到十三岁，那是我记事以来第一次自己出门远行，我去了上海的舅舅家过年。姥姥和姥爷尚都健在人世，一周多的时间里，我跟着舅舅一家走亲访友、自驾郊游。回家之后，因为爸爸妈妈平日都要上班，绝大多数时间，我都是独自在家里度过。在那段稚嫩的记忆里，我留下的是无尽的空虚和不安。我像是一只囚鸟，被短暂地放了出来而又重新回到了原点。后来我慢慢长大，这段记忆似乎已被青春的风暴给席卷走了，但它却一直在我的心底埋藏着，不知什么时候，我又会回想起那种感觉，心头不由得一紧。</p><p>如今物是人非，姥姥已过世多年，姥爷也在去年的冬天离开了我们。可是生活还要继续，我也要好好生活，对吗？即使现在的一切不那么完美，但似乎也不算太糟糕。这一天我抬起了头，恍惚间，我仿佛看到了十八岁的自己正在痴痴地凝望着同一片天空。</p><p>那是故乡的天空。</p><ri>2024.10.26 于成都</ri>`;
@@ -90,24 +121,40 @@ case 'shouquan':
 	specialInfo('授权转载');
 	break;
 case 'author:铁柱':
-	var ox = `<bi>铁 柱</bi>春潮网作者，代表作：《界碑永存，英雄不朽》等。`;
-	specialInfo('作者信息');
+	var ox = `<zuoz>铁 柱<w>站在山顶，向往宇宙</w></zuoz><zzxq><ti>2022-12-09</ti>祝你这个冬天快乐<br/><ti>2021-10-09</ti>奋斗赋予时间以意义，精神照亮民族的未来<br/><ti>2021-06-01</ti>儿童节快乐<br/><ti>2021-02-20</ti>界碑永存，英雄不朽<br/><ti>2020-10-20</ti>还有你陪我数星星</zzxq>`;
+	authorPage();
 	break;
 case 'author:Abel':
-	var ox = `<bi>Abel</bi>刘彦泽Abel`;
-	specialInfo('作者信息');
+	var ox = `<zuoz>Abel<w>心怀希望，向阳而生</w></zuoz><zzxq><ti>2024-10-26</ti>故乡的天空</zzxq>`;
+	authorPage();
 	break;
 case 'author:给你一拳':
-	var ox = `<bi>给你一拳</bi>春潮网作者，代表作品：《等待尘烟散去》等。`;
-	specialInfo('作者信息');
+	var ox = `<zuoz>给你一拳<w>我一肚子烂泥却有万人敬仰啊</w></zuoz><zzxq><ti>2022-11-19</ti>等待尘烟散去</zzxq>`;
+	authorPage();
 	break;
 case 'author:豆腐泡杀手':
-	var ox = `<bi>豆腐泡杀手</bi>春潮网作者，代表作品疫情系列文章。`;
-	specialInfo('作者信息');
+	var ox = `<zuoz>豆腐泡杀手<w>冇豆泡的麻辣烫莫得灵魂</w></zuoz><zzxq><ti>2023-11-08</ti>写在没有疫情的第一个冬天<br/><ti>2022-11-16</ti>写在疫情时代的第四个冬天<br/><ti>2021-11-16</ti>写在疫情时代的第三个冬天</zzxq>`;
+	authorPage();
+	break;
+case 'author:杨二狗':
+	var ox = `<zuoz>杨二狗<w>人要有梦想，万一实现了呢？</w></zuoz><zzxq><ti>2023-03-30</ti>《不止不休》：黄金年代理想主义的挽歌<br/><ti>2021-05-04</ti>五四青年，我们为何而纪念</zzxq>`;
+	authorPage();
 	break;
 case 'author:沐星雨人':
-	var ox = `<bi>沐星雨人</bi>春潮网作者，代表作《我看见，我祈愿》等。`;
-	specialInfo('作者信息');
+	var ox = `<zuoz>沐星雨人<w>想要回到那时候无忧无虑的美好……</w></zuoz><zzxq><ti>2021-09-26</ti>迪迦：致以光明<br/><ti>2021-05-26</ti>追不上时代脚步的人<br/><ti>2021-05-14</ti>热血难凉<br/><ti>2021-05-01</ti>我看见，我祈愿<br/><ti>2021-03-28</ti>影子与你<br/><ti>2021-01-13</ti>夜晚，很累的人睡不着<br/><ti>2020-10-17</ti>愿爱无忧</zzxq>`;
+	authorPage();
+	break;
+case 'author:NLS':
+	var ox = `<zuoz>牛老师/NLS/上司几太<w>Life is a fucking movie.</w></zuoz><zzxq><ti>2023-03-08</ti>疫年整<br/><ti>2022-12-13</ti>当我们告别行程卡时，我们在告别什么<br/><ti>2021-07-24</ti>我不喜欢那种一眼就能望得到头的未来<br/><ti>2021-06-09</ti>再见，青华<br/><ti>2021-05-23</ti>死亡与新生<br/><ti>2021-03-31</ti>我们每个人其实都挺累的</zzxq>`;
+	authorPage();
+	break;
+case 'author:春潮编辑部':
+	var ox = `<zuoz>春潮编辑部<w>春潮编辑部文章联合署名作者</w></zuoz><zzxq><ti>2023-12-31</ti>2024新年献词（联合署名）<br/><ti>2022-12-31</ti>2023新年献词（联合署名）</zzxq>`;
+	authorPage();
+	break;
+case 'author:307':
+	var ox = `<zuoz>307<w>咖喱饭还是鸡排的好吃</w></zuoz><zzxq><ti>2023-03-23</ti>葬尸湖</zzxq>`;
+	authorPage();
 	break;
 default:
 	if(IS==='special') {
@@ -117,8 +164,8 @@ default:
 }
 
 
-function basicInfo(x1,x2) {
-	document.getElementById('art-title').innerText = x1;
+function basicInfo(x1,x2) {5
+	document.getElementById('art-title').innerHTML = x1;
 	var y = Math.floor(ID/10000);
 	var m = Math.floor((ID/100)%100);
 	var d = Math.floor(ID%100);
@@ -130,10 +177,17 @@ function basicInfo(x1,x2) {
 		document.getElementById('art-content').innerHTML = op;
 	}
 	if(ox===1) {
-		document.getElementById('art-content').innerHTML = `<p style="text-align:center;font-size:14px;color:#9f9f9f;margin:80px 0;"><img src="https://1.s140i.faiscm.com/4/AIwBCAAQBBgAIM_Mu94FKJXmt6sGMHM4cw.png" style="width:90px!important;user-select:none;"/>文章内容为空</p>`;
+		document.getElementById('art-content').innerHTML = `<p style="text-align:center;font-size:14px;color:#9f9f9f;margin:160px 0;"><img src="https://1.s140i.faiscm.com/4/AIwBCAAQBBgAIM_Mu94FKJXmt6sGMHM4cw.png" style="width:90px!important;user-select:none;"/>由于版权原因，文章内容仅支持在微信公众号“春潮SPRIDE”内查看。</p>`;
 	}
  	elTitl(x1);
 } 
+
+function authorPage() {
+	elHide('special_toptit');
+	document.getElementById('spec_mdb').style.border = 'none';
+	document.getElementById('isbody').style.backgroundColor = '#fff';
+	specialInfo('作者信息');
+}
 function specialInfo(x1) {
 	document.getElementById('special_toptit').innerText = x1;
 	document.getElementById('special-content').innerHTML = ox;
@@ -182,8 +236,9 @@ if(SK==='new') {
 }
 
 if(ID !== ''&& ID) {
-		document.getElementById('isid').innerText = '找不到文章'+ID+'，无效的索引号。';
+		document.getElementById('isid').innerText = '此文章不存在';
 	}
 	if(ID === '' || !ID) {
-		document.getElementById('isid').innerText = '找不到文章，ID未传入信息。';
+		document.getElementById('isid').innerText = '暂无内容';
 	}
+
