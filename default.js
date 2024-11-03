@@ -188,6 +188,11 @@ function authorPage() {
 	document.getElementById('isbody').style.backgroundColor = '#fff';
 	specialInfo('作者信息');
 }
+function checkSiteStatus() {
+	alert('管理维护信息');
+	alert('时间：2000年1月1日0时0分\n状态：在线\n流量：正常');
+	alert('感谢您的查询。');
+}
 function specialInfo(x1) {
 	document.getElementById('special_toptit').innerText = x1;
 	document.getElementById('special-content').innerHTML = ox;
@@ -203,10 +208,10 @@ function elTitl(x) {
 	document.title = x + ' - 春潮网';
 }
 function openArticle(x) {
-	window.open('?is=article&ID=' + x + '&skin=new', '_blank');
+	window.open('?is=article&ID=' + x + '&skin=skin0&scheck=1', '_blank');
 }
 function openSpecial(x) {
-	window.open('?is=special&TYPE=' + x, '_blank');
+	window.open('?is=special&TYPE=' + x + '&skin=skin0&scheck=1', '_blank');
 }
 function addList(w, x, y, z) {
 	var addListContent = `<a href="javascript:void(0);" onclick="openArticle('${x}${y}${z}');"><b>${w}</b><t>${x}-${y}-${z}</t></a>`;
@@ -214,7 +219,7 @@ function addList(w, x, y, z) {
 }
 function iname(span) {
 	var x = span.innerText;
-	window.open('?is=special&TYPE=author:' + x, '_blank');
+	window.open('?is=special&TYPE=author:' + x + '&skin=skin0&scheck=1&sp_pg=w_info', '_blank');
 }
 
 
