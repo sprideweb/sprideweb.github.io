@@ -25,8 +25,7 @@ topbar tit {
 	font-family: SimHei;
 }
 
-
-
+del {opacity: .6;}
 @media(max-width:900px) {
 	.index_news a {
 	display: block;
@@ -67,7 +66,7 @@ topbar tit {
 	.width {
 		width: 100%;
 	}
-	topbar {background: #121a2a;}
+	topbar {background: #0066cb;}
 	midbar {margin: 0!important;border:none!important;}
 	body {background: #fff;}
 	#navbar {
@@ -104,10 +103,6 @@ topbar tit {
 		z-index: 12;
 		right: 30px;top: 10px;
 		background: none;
-		transition: .1s;
-	}
-	#clsnavm:hover {
-		color: #0080ff;
 	}
 	.switch_news a:not(.acv) {background: #f0f0f0;border-color: #f0f0f0!important;transition: .1s;}
 	.switch_news a:not(.acv):hover {background: #fff;border-color: #fff!important;}
@@ -115,7 +110,7 @@ topbar tit {
 }
 
 
-
+rd {color: red;}
 
 @media(min-width:900px) {
 	.index_news a {
@@ -266,13 +261,16 @@ bottombar {
 }
 zzxq {
 	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 	font-size: 14px;
 	color: #272727;
 	line-height: 2.8;
-	font-family: Tahoma,SimHei,sans-serif;
-	padding: 5px;
+	font-family: Arial, PingFang SC,sans-serif;
+	padding: 20px 5px;
 	background: #fafafa;
-	border-radius: 10px;
+	border-radius: 0 0 8px 8px;      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0);border: 1px solid #e0e0e0;
 }
 zzxq ti {
 	display: inline-block;
@@ -280,16 +278,16 @@ zzxq ti {
 	line-height: 1;
 	padding: 0 10px;
 	border-radius: 5px;
-	color: blue;
+	color: #0080ff;
 }
 zuoz {
-	display: block;
+	display: block;      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0);border: 1px solid #e0e0e0;
 	line-height: 1;
 	text-align: center;
-	padding: 22px 0 8px 0;
+	padding: 37px 0 23px 0;
 	font-size: 22px;
-	border-radius: 10px;
-	margin-bottom: 30px;
+	border-radius: 8px 8px 0 0;
+	margin-bottom: 0px;
 	font-family: Microsoft Yahei,sans-serif;
 	color: #fff;
 	font-weight: bold;
@@ -297,12 +295,15 @@ zuoz {
 }
 zuoz w {
 	display: block;
+	overflow: hidden;
 	padding: 0px 0;
 	line-height: 1;
 	font-size: 13px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 	line-height: 3;
 	font-weight: normal;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.05em;
 	text-align: center;
 }
 bottombar p {
@@ -385,11 +386,14 @@ a.sjcc_btn:hover {background-color: orange;}
 
 .a-lins {
 	text-decoration: none;
-	color: #0080ff;
+	color: #3f3f3f;
+	text-decoration: underline;
 }
 .a-lins:hover {
-	color: orange;
+	color: #0080ff;
+	text-decoration: underline;
 }
+
 bq {
 	display: block;
 	width: 100%;
@@ -407,16 +411,17 @@ bq:hover {
 .more_btn {
 	font-size: 14.5px;
 	color: #0080ff;
-	padding: 8px 20px;
-	border: 1.5px solid #0080ff;
+	background: #fff;
+	padding: 9px 25px;
 	line-height: 8;
-	border-radius: 10px;
+	border-radius: 5px;
 	cursor: pointer;
-	font-family: SimHei;
+	transition: .2s;
 }
 .more_btn:hover {
-	background: #0080ff;
-	color: #fff;
+	background: #f0f0f0;
+	color: #272727;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .08);
 }
 iframe {
 	width: 100%;
