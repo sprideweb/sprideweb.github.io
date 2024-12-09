@@ -122,7 +122,7 @@ case 'post':
 	specialInfo('栏目投稿');
 	break;
 case 'aboutus.2022':
-	var ox = `\u3000\u3000春潮网2021年10月正式上线，由春潮编辑部和微信公众号春潮SPRIDE主办，经授权首发来自春潮专栏文章，发布春潮动态，使用户无需登录微信也能阅读来自春潮的精品文章。<br/>\u3000\u3000自成立以来，在中国共产党光辉的照耀下，春潮网始终深刻领悟“两个确立”的决定性意义，增强“四个意识”、坚定“四个自信”、做到“两个维护”，始终以宣传中国特色社会主义、宣传社会正能量内容为己任，始终以弘扬中国特色社会主义先进文化、弘扬社会正气为荣。<br/>\u3000\u3000拥抱智能互联网，加快全体系向智能互联转型升级。未来，春潮网将不断努力，为建设社会主义美好明天而继续砥砺前行。`;
+	var ox = `\u3000\u3000春潮网2021年10月正式上线，由春潮编辑部和微信公众号春潮SPRIDE主办。我们的内容广泛，涵盖哲史、文学、时事、社会纪实等，展现当代青年风采，弘扬优秀精神文化。<br/>\u3000\u3000自成立以来，在中国共产党光辉的照耀下，春潮网始终深刻领悟“两个确立”的决定性意义，增强“四个意识”、坚定“四个自信”、做到“两个维护”，始终以宣传中国特色社会主义、宣传社会正能量内容为己任，始终以弘扬中国特色社会主义先进文化、弘扬社会正气为荣。<br/>\u3000\u3000拥抱智能互联网，加快全体系向智能互联转型升级。未来，春潮网将不断努力，为建设社会主义美好明天而继续砥砺前行。`;
 	specialInfo('关于本站');
 	break;
 case 'lxhz':
@@ -204,9 +204,12 @@ function authorPage() {
 	document.getElementById('spec_mdb').style.border = 'none';
 	document.getElementById('spec_mdb').style.boxShadow = 'none';
 	document.getElementById('spec_mdb').style.marginTop = '10px';
-	document.getElementById('special-content').style.width = '96%';
+	document.getElementById('special-content').style.width = '100%';
 	document.getElementById('special-content').style.padding = '18px 0';
-	document.getElementById('isbody').style.backgroundColor = '#fff';
+	var Cwidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	if(Cwidth >= 900) {
+		document.getElementById('spec_mdb').style.background = 'none';
+	}
 	specialInfo('作者信息');
 }
 function swp(x00) {
@@ -291,10 +294,12 @@ if(ID !== ''&& ID) {
 	}
 
 function openNavMobile() {
-	document.getElementById('navbar').style.display = 'block';
+	document.getElementById('navbar').style.left = '0';
+	document.getElementById('navbar').style.opacity = '1';
 }
 function closeNavMobile() {
-	document.getElementById('navbar').style.display = 'none';
+	document.getElementById('navbar').style.left = '-102%';
+	document.getElementById('navbar').style.opacity = '0';
 }
 
 
