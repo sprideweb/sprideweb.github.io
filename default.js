@@ -166,7 +166,7 @@ case 'author:NLS':
 	authorPage();
 	break;
 case 'author:春潮编辑部':
-	var ox = `<zuoz>新年献词<w>简介：这里是春潮编辑部新年献词专题页面，欢迎给我们投稿。</w></zuoz><zzxq><ti>2024-12-31</ti>愿人生中的每段旅程，都有故事娓娓可谈——春潮2025新年献词<br/><ti>2023-12-31</ti>像流水一样不再回头——春潮2024新年献词<br/><ti>2022-12-31</ti>告别未来十年里最好的一年——春潮2023新年献词</zzxq>`;
+	var ox = `<zuoz>春潮编辑部</zuoz><zzxq><ti>2024-12-31</ti>愿人生中的每段旅程，都有故事娓娓可谈——春潮2025新年献词<br/><ti>2023-12-31</ti>像流水一样不再回头——春潮2024新年献词<br/><ti>2022-12-31</ti>告别未来十年里最好的一年——春潮2023新年献词</zzxq>`;
 	authorPage();
 	break;
 case 'author:307':
@@ -216,8 +216,10 @@ function swp(x00) {
 	window.location.href = '?articleCategorySelect='+x00;
 }
 function checkSiteStatus() {
-	alert('时间：2000年1月1日0时0分\n状态：OL\n流量：A');
-	alert('thanks for visiting http://spride.asia/');
+	var userConfirmed = confirm("confirm");
+	if(userConfirmed) {
+		alert('时间：2000年1月1日0时0分\n状态：OL\n流量：A');
+	}
 }
 function specialInfo(x1) {
 	document.getElementById('special_toptit').innerText = x1;
@@ -296,10 +298,16 @@ if(ID !== ''&& ID) {
 function openNavMobile() {
 	document.getElementById('navbar').style.left = '0';
 	document.getElementById('navbar').style.opacity = '1';
+	document.getElementById('navbarzz').style.left = '0';
+	document.getElementById('navbarzz').style.opacity = '1';
+	document.body.style.overflow='hidden';
 }
 function closeNavMobile() {
-	document.getElementById('navbar').style.left = '-102%';
+	document.getElementById('navbar').style.left = '-82%';
 	document.getElementById('navbar').style.opacity = '0';
+	document.getElementById('navbarzz').style.left = '-102%';
+	document.getElementById('navbarzz').style.opacity = '0';
+	document.body.style.overflow='visible';
 }
 
 
