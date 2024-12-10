@@ -71,13 +71,24 @@ del {opacity: .6;}
 	body {background: #fff;}
 	#navbar {
 		position: fixed;
-		top: 0;left: -102%;
-		width: 100%;height: 100vh;
+		top: 0;left: -82%;
+		width: 80%;height: 100vh;
 		overflow-y: auto;
 		z-index: 10;
 		background: #0072e3;
 		opacity: 0;
-		transition: opacity .55s, left .55s;
+		transition: opacity .5s, left .5s;
+	}
+	#navbarzz {
+		position: fixed;
+		top:0;
+		left: -102%;
+		width: 100%;
+		height: 100vh;
+		z-index: 8;
+		background: rgba(0, 0, 0, .6);
+		transition: opacity .5s;
+		opacity: 0;
 	}
 	#navbar a {
 		display: block;
@@ -200,6 +211,9 @@ bottombar p a:hover {
 rd {color: red;}
 
 @media(min-width:900px) {
+	#navbarzz {
+		display: none;
+	}
 	bottombar {
 	background: #f0f0f0;
 	display: block;
@@ -236,8 +250,7 @@ bottombar p a:hover {
 	line-height: 1;
 	text-align: center;
 	padding: 45px 0 23px 0;
-	font-size: 30px;
-	text-shadow: 0 2px 1.5px rgba(0, 0, 0, .5);
+	font-size: 28px;
 	margin-bottom: 0px;
 	font-family: Arial,sans-serif;
 	color: #fff;
