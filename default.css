@@ -15,7 +15,25 @@ topbar {
 	line-height: 70px;
 	padding: 0 10px;
 }
-topbar tit {
+
+
+del {opacity: .6;}
+@media(max-width:900px) {
+	bottombar {
+		display: none!important;
+	}
+	sjbtm {
+		display: block;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		bottom: 20px;
+		font-size: 12px;
+		color: #fff;
+		opacity: .6;
+		left: 0;
+	}
+	topbar tit {
 	color: #fff;
 	font-size: 15px;
 	line-height: 4.66;
@@ -24,9 +42,6 @@ topbar tit {
 	border-left: 1px solid rgba(256, 256, 256, .5);
 	font-family: SimHei;
 }
-
-del {opacity: .6;}
-@media(max-width:900px) {
 	.index_news a {
 	display: block;
 	font-size: 16.5px;
@@ -201,9 +216,34 @@ bottombar p a {
 bottombar p a:hover {
 	color: #0080ff;
 }
-
-
-
+#art-content {
+	margin: 20px auto 50px auto;
+	width: 80%;
+	font-size: 15px;
+}
+#art-title {
+	font-size: 24px;
+	line-height: 1.6;
+	text-align: center;
+	font-family: Arial,sans-serif;
+	padding: 50px 15px 20px 15px;
+}
+.art-info {
+	color: #5f5f5f;
+	font-size: 13px;
+	text-align: center;
+	padding: 10px 0;
+	font-family: sans-serif;
+	margin: 20px 20px 20px 20px;
+}
+#special-content {
+	padding: 50px 0;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #101010;
+	line-height: 2.4;
+}
 
 }
 
@@ -211,6 +251,40 @@ bottombar p a:hover {
 rd {color: red;}
 
 @media(min-width:900px) {
+	sjbtm {
+		display: none;
+	}
+	topbar tit {
+	color: #fff;
+	font-size: 18px;
+	line-height: 3.8;
+	padding-left: 10px;
+	margin-left: 10px;
+	border-left: 1px solid rgba(256, 256, 256, .5);
+	font-family: SimHei;
+}
+	.art-info {
+	color: #5f5f5f;
+	font-size: 16px;
+	text-align: center;
+	background: #f6f6f6;
+	line-height: 2.5;
+	font-family: sans-serif;
+	margin: 20px 20px 20px 20px;
+}
+
+	#art-title {
+	font-size:28px;
+	line-height: 1.6;
+	text-align: center;
+	font-family: Arial,sans-serif;
+	padding: 50px 15px 20px 15px;
+}
+	#art-content {
+	margin: 20px auto 50px auto;
+	width: 70%;
+	font-size: 20px;
+}
 	#navbarzz {
 		display: none;
 	}
@@ -295,9 +369,10 @@ zzxq ti {
 	font-weight: bold;
 }
 	.index_news a {
-	display: block;
+	display: inline-block;
+	width: 551px;
 	font-size: 16px;
-	padding: 0 20px 0 15px;
+	padding: 0 10px 0 5px;
 	color: #272727;
 	transition: .2s;
 	
@@ -342,10 +417,15 @@ zzxq ti {
 		background: linear-gradient(to bottom, #fafafa, #f0f0f0);
 	}
 	.width {
-		width: 900px;
+		width: 1135px;
 		margin: 0 auto;
 	}
-	midbar {box-shadow: 0 3px 5px rgba(0, 0, 0, .1);}
+	::selection {
+		background: #003D79	;
+		color: #fff;
+		text-shadow: none;
+	}
+	midbar {box-shadow: 1px 3px 6px rgba(0, 0, 0, .1);}
 	topbar {background: radial-gradient(circle at center center, rgb(30, 108, 204),rgb(36, 61, 118));box-shadow: 0 3px 5px rgba(0, 0, 0, .2);}
 	body {background: #fafafa;}
 	#navbar {
@@ -361,14 +441,14 @@ zzxq ti {
 		display: inline-block;
 		vertical-align: top;
 		text-decoration: none;
-		font-size: 15px;
+		font-size: 18px;
 		transition: .1s;
 		user-select: text!important;
 		border-radius: 5px;
 	}
 	#navbar a:not(.sjcc_btn) {
-		padding: 15px 10px;
-		margin: 12.5px 0px;
+		padding: 14.5px 10px;
+		margin: 11px 0px;
 	}
 	a.sjcc_btn {
 		height: 70px;
@@ -385,6 +465,13 @@ zzxq ti {
 		display: none;
 	}
 	.mob_btn {display: none;}
+	#special-content {
+	padding: 50px 100px;
+	margin: 0 auto;
+	font-size: 18px;
+	color: #101010;
+	line-height: 2;
+    }
 }
 .logo {
 	display: inline-block;
@@ -418,14 +505,7 @@ midbar {
 	font-family: SimSun, sans-serif!important;
 }
 
-#special-content {
-	padding: 50px 0;
-	width: 90%;
-	margin: 0 auto;
-	font-size: 16px;
-	color: #101010;
-	line-height: 2.4;
-}
+
 #special-content bi {
 	font-size: 18px;
 	font-weight: bold;
@@ -542,28 +622,9 @@ bq:hover {
 iframe {
 	width: 100%;
 }
-#art-title {
-	font-size: 24px;
-	line-height: 1.6;
-	text-align: center;
-	font-family: Arial,sans-serif;
-	padding: 50px 15px 20px 15px;
-}
-.art-info {
-	color: #5f5f5f;
-	font-size: 13px;
-	text-align: center;
-	background: #f6f6f6;
-	padding: 10px 0;
-	font-family: sans-serif;
-	margin: 20px 20px 20px 20px;
-}
 
-#art-content {
-	margin: 20px auto 50px auto;
-	width: 80%;
-	font-size: 15px;
-}
+
+
 #art-content img {
 	display: block;
 	width: 100%;
