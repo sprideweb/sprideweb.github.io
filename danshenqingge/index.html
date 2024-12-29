@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>云端的单身情歌活动</title>
+<style>
+	html {
+		font-size: 1vw;
+	}
+	* {
+		line-height: 1;
+		margin: 0;
+		padding: 0;
+		font-weight: normal;
+	}
+	body {
+		background: #fff;
+		text-align: center;
+	}
+	h1.bt1 {
+		font-size: 6rem;
+		margin-top: 10rem;
+		color: darkgreen;
+	}
+	h1.bt2 {
+		font-size: 2.8rem;
+		text-align: right;
+		padding-right: 2rem;
+		color: red;
+		line-height: 5;
+	}
+	p.it1 {
+		font-size: 2.5rem;
+		padding: 3rem 4rem;
+		margin: 2rem 4rem;
+		border-radius: 1rem;
+		box-shadow: 0 .2rem 1rem rgba(0, 0, 0, .1);
+		text-align: left;
+		line-height: 2;
+		color: #8f8f8f;
+	}
+	smt {
+		display: block;
+		font-size: 3rem;
+		color: blue;
+		line-height: 3;
+		color: #000;
+	}
+	btn {
+		display: inline-block;
+		color: #fff;
+		padding: 1.2rem 1.8rem;
+		border-radius: .8rem;
+		background: #2894ff;
+		cursor: pointer;
+		margin-left: 1rem;
+	}
+	.mt1 {
+		display: block;
+		width: 50%;
+		margin: 4rem auto;
+	}
+	#q_text, #q_img {
+		display: none;
+	}
+	#q_text {
+		color: green;
+	}
+	.bt3 {
+		font-size: 2.2rem;
+		line-height: 6;
+		color: #9f9f9f;
+	}
+</style>
+</head>
+<body>
+<h1 class="bt1">云端的单身情歌</h1>
+<h1 class="bt2">——东北师大附中毕业生双十一线上合唱活动</h1>
+<p class="it1">
+	<smt>活动简介</smt>
+	&emsp;&emsp;我们自2022年开始每年举办东北师大附中毕业生双十一线上合唱活动，作为与东北师大附中两个校区的传统活动同步进行的毕业生活动，至今（2024年11月）已成功举办三届，每届参与人数均达数百人，目前活动QQ总群人数在700人以上。<br/>
+	&emsp;&emsp;三载附中人，一世附中情。通过延续附中的传统活动——单身情歌合唱，我们希望让附中“勇开风气、兼容并包”的精神在毕业生之间永续传承下去，也可作为高中时代点点回忆的载体，让您无论现在身在世界何方，都能感受到记忆里的温暖。<br/>
+</p>
+<p class="it1">
+	<smt>举办信息</smt>
+	&emsp;&emsp;2022年第一届：2022年11月11日23:11分；腾讯会议<br/>
+	&emsp;&emsp;2023年第二届：2023年11月11日23:11分；Voov Meeting<br/>
+	&emsp;&emsp;2024年第三届：2024年11月11日23:11分；腾讯会议<br/>
+	&emsp;&emsp;2025年第四届：筹划中，敬请期待
+</p>
+<p class="it1">
+	<smt>参与活动</smt>
+	&emsp;&emsp;活动将通过在线会议平台/直播间软件举行，具体形式请进群查看通知，在活动开始前请自行下载好软件和注册平台账号。<br/><br/>
+	&emsp;&emsp;活动QQ总群：<span id="q_text">879982231（未满）</span><btn id="q_btn" onclick="qControl()">显示</btn><br/>
+	<img id="q_img" class="mt1" src="https://13511974.s21i.faiusr.com/4/3/ABUIABAEGAAgitbbswYoqIPdywMwwAM4wAM.png"/>
+</p>
+<p class="bt3">© 2022-2024 All right reserved.</p>
+<script>
+	q_cnt=0;
+	function qControl() {
+		if(q_cnt%2===0) {
+			document.getElementById('q_text').style.display='inline';
+			document.getElementById('q_img').style.display='block';
+			document.getElementById('q_btn').innerText='隐藏';
+		}
+		if(q_cnt%2===1) {
+			document.getElementById('q_text').style.display='none';
+			document.getElementById('q_img').style.display='none';
+			document.getElementById('q_btn').innerText='显示';
+		}
+		q_cnt++;
+	}
+</script>
+</body>
+</html>
