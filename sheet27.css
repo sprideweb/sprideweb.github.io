@@ -1,0 +1,356 @@
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: sans-serif;
+}
+.width {
+	width: 900px;
+	margin: 0 auto;
+}
+.bline {
+	height: 1px;
+	width: 100%;
+	min-width: 900px;
+	background: #f0f0f0;
+}
+.header {
+	height: 100px;
+	z-index: 100;
+}
+.logo {
+	display: inline-block;
+	height: 100px;
+	background-image: url(https://13511974.s21i.faiusr.com/4/5/ABUIABAEGAAg0ZjouwYo2IzALjC3Ajhv.png);
+	background-size: 100% auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 135px;
+}
+.nav {
+	height: 100px;
+	float: right;
+	position: relative;
+}
+.nav a.lin {
+	color: #000;
+	display: inline-block;
+	margin-left: 40px;
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 100px;
+}
+.nav a.act {
+	color: #0072e3;
+	display: inline-block;
+	margin-left: 40px;
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 100px;
+}
+.nav a.lin:hover {
+	color: #0072e3;
+}
+.drop {
+	display: inline-block;
+	vertical-align: top;
+}
+.dropc {
+	display: none;
+	position: absolute;
+	width: 100px;
+	text-align: center;
+	background: #fff;
+	overflow: hidden;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+}
+.drop:hover .dropc {
+	display: block;
+}
+.dropc a {
+	display: block;
+	color: #000;
+	margin: 3px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.8;
+	padding: 8px 5px;
+	text-decoration: none;
+}
+.dropc a:hover {
+	background: #f0f0f0;
+	color: #0072e3;
+}
+
+
+.about {
+	padding: 20px 15px;
+}
+
+.about h1 {
+	font-weight: normal;
+	font-size: 24px;
+	padding: 30px 0;
+	color: #0066cc;
+}
+.about p.intro {
+	font-size: 18px;
+	width: 95%;
+	margin: 5px 2.5%;
+	line-height: 30px;
+	padding-bottom: 15px;
+}
+.about p {
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 2.5px 0;
+}
+
+.about h2 {
+	font-size: 19px;
+	font-weight: normal;
+	padding-bottom: 15px;
+}
+.about a {
+	color: #000;
+	text-decoration: none;
+}
+.about a:hover {
+	border-bottom: 1.5px dotted #0072e3;
+	color: #0072e3;
+}
+.language {
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 0;
+	width: 80px;
+	font-size: 12px;
+	color: #9f9f9f;
+	vertical-align: top;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.language:hover {
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+	background: #fff;
+	border: 1px solid #e0e0e0;
+}
+.language a.language-main {
+	display: inline-block;
+	width: 100%;
+	color: #8f8f8f;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+	text-decoration: none;
+	line-height: 50px;
+}
+.language:hover a.language-main span {
+	transform: rotate(180deg);
+}
+a.language-main span {
+	display: inline-block;
+	width: 10px;
+	height: 6px;
+	vertical-align: middle;
+	background: url(https://13511974.s21i.faiusr.com/4/5/ABUIABAEGAAg0bbvuwYop7-KmQcwsAk42AQ.png);
+	background-size: 100% 100%;
+	margin-right: 5px;
+}
+.language:hover .language-drop {
+	display: block;
+}
+.language-drop {
+	display: none;
+}
+.language-drop a {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #9f9f9f;
+	text-decoration: none;
+	line-height: 40px;
+}
+.language-drop a:hover {
+	color: #0072e3;
+	background: #f0f0f0;
+}
+
+.qrbox {
+	display: inline-block;
+	vertical-align: top;
+	height: 110px;
+	margin: 30px 0;
+}
+.qrbox img {
+	display: inline-block;
+	vertical-align: top;
+	width: 110px;
+	height: 110px;
+}
+.qrbox p {
+	margin-top: 20px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5px;
+	font-size: 15.5px;
+}
+.qrbox p span {
+	display: block;
+	font-size: 14px;
+	color: #0072e3;
+	margin-top: 10px;
+}
+.jobtitle {
+	font-size: 19.5px!important;
+	line-height: 30px!important;
+	margin: 5px 0;
+}
+.jobtitle span {
+	display: inline-block;
+	color: #9f9f9f;
+	font-size: 12px;
+	vertical-align: middle;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+
+.footer {
+	padding: 30px 0 0 0;
+	text-align: center;
+}
+.footer .line1,.footer .line2,.footer .line3 {
+	display: inline-block;
+	vertical-align: top;
+}
+.footer .line1 a {
+	display: block;
+	font-size: 14px;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	margin-right: 30px;
+}
+.footer .line2 img {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	padding: 0 20px;
+}
+.footer .line3 p {
+	font-size: 14px;
+	color: #000;
+	line-height: 30px;
+	margin-left: 30px;
+	text-align: left;
+}
+.footer .line3 p a {
+	color: #000;
+	text-decoration: none;
+}
+.footer .line4 p {
+	font-size: 12px!important;
+	line-height: 30px!important;
+	margin-top: 10px;
+	color: #9f9f9f;
+	text-align: center;
+}
+
+.news-index {
+	margin: 10px 0 40px 0;
+}
+.news-index a {
+	cursor: pointer;
+	display: block;
+	font-size: 16.5px;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 20px;
+}
+.news-index a img {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	padding-right: 8px;
+	margin-right: -3px;
+	vertical-align: middle;
+}
+.news-index a span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+	font-size: 12px;
+	color: #9f9f9f;
+}
+.news-index a:hover {
+	color: #000;
+	border: none;
+}
+.news-index empty {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	padding: 10px 0;
+	color: #9f9f9f;
+}
+.news-index empty img {
+	width: 150px;
+	padding-bottom: 12px;
+}
+
+
+.bigbanner {
+	background: #0047ca;
+	min-width: 900px;
+	height: 685px;
+}
+.bigbanner .width {
+	position: relative;
+	height: 666px;
+	z-index: 0;
+}
+.bigbanner .width slogan {
+	display: block;
+	position: absolute;
+	bottom:210px;
+	left: 0;
+	background: url(https://13511974.s21i.faiusr.com/4/5/ABUIABAEGAAg35P1uwYo9qOa5AQw6wQ4swI.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	width: 450px;
+	height: 300px;
+}
+.bigbanner .width back {
+	display: block;
+	position: absolute;
+	bottom: 170px;
+	right: 0;
+	background: url(https://1.s140i.faiscm.com/4/AIwBCAAQBBgAILuRo_sFKJi5iAswqwc42wU.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	width: 380px;
+	height: 400px;
+	z-index: 100;
+}
+.bigbanner .width front {
+	display: block;
+	position: absolute;
+	bottom: 130px;
+	right: 40px;
+	z-index: 20;
+	background: url(https://1.s140i.faiscm.com/4/AIwBCAAQBBgAIJGG8PcFKNDkjZQHMKgGOPcC.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	width: 460px;
+	height: 400px;
+	opacity: .25;
+}

@@ -1,0 +1,118 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>新闻详情</title>
+<link rel="shortcut icon" href="/jbwz/favicon.classic.ico" type="image/x-icon"/>
+<link rel="icon" href="/jbwz/favicon.classic.ico" type="image/x-icon"/>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+@media(min-width:650px) {
+	.bk {
+		width: 650px;
+		margin: 0 auto;
+	}
+}
+@media(max-width:650px) {
+	.bk {
+		width: 100%;
+		margin: 0;
+	}
+}
+.wzbt {
+	color: #0072e3;
+	font-size: 16px;
+	line-height: 40px;
+	padding-left: 20px;
+	position: relative;
+	background: #fafafa;
+	border-bottom: 1px solid #f0f0f0;
+}
+.wzbt span {
+	float: right;
+	display: inline-block;
+	margin: 0 5px;
+	vertical-align: middle;
+	font-size: 13.5px;
+	cursor: pointer;
+	color: #9f9f9f;
+}
+.wzbt span:hover {
+	color: #5b5b5b;
+	text-decoration: underline;
+}
+.nrq {
+	padding: 40px 20px;
+}
+.nrq #wzxbt {
+	text-align: center;
+	line-height: 1.5;
+	font-size: 24px;
+	font-weight: normal;
+}
+.nrq .wzxx {
+	text-align: center;
+	font-size: 14.5px;
+	margin: 20px 0;
+	color: #9f9f9f;
+}
+.nrq #wznr {
+	font-size: 16px;
+	color: #000;
+	padding: 10px 20px;
+	line-height: 2;
+}
+.nrq #fbsj {
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: middle;
+}
+#wznr p {
+	padding: 5px 0;
+	line-height: 1.5;
+}
+#wznr table {
+	font-size: 1p6x!important;
+	border-collapse:collapse;
+	width: 100%;
+}
+#wznr td {
+	border: 1px solid #000;
+	padding: 5px;
+}
+#wznr img {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+empty {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	padding: 50px 0;
+	color: #9f9f9f;
+}
+empty img {
+	width: 150px;
+	padding-bottom: 12px;
+	opacity: .8;
+}
+</style>
+</head>
+<body>
+<div class="bk">
+	<div class="wzbt">新闻详情<span style="margin-right: 20px;" onclick="window.close()">关闭</span><span onclick="window.print()">打印</span></div>
+	<div class="nrq">
+		<h1 id="wzxbt"></h1>
+		<p id="wzxx" class="wzxx">时间：<span id="fbsj"></span></p>
+		<div id="wznr"></div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="news.js"></script>
+</body>
+</html>
