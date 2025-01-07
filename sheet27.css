@@ -312,45 +312,45 @@ a.language-main span {
 }
 .bigbanner .width {
 	position: relative;
-	height: 666px;
+	height: 685px;
 	z-index: 0;
 }
 .bigbanner .width slogan {
 	display: block;
 	position: absolute;
-	bottom:210px;
-	left: 0;
+	bottom:220px;
+	left: -19px;
 	background: url(https://13511974.s21i.faiusr.com/4/5/ABUIABAEGAAg35P1uwYo9qOa5AQw6wQ4swI.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	width: 450px;
+	width: 480px;
 	height: 300px;
 }
 .bigbanner .width back {
 	display: block;
 	position: absolute;
-	bottom: 170px;
+	bottom: 0;
 	right: 0;
-	background: url(https://1.s140i.faiscm.com/4/AIwBCAAQBBgAILuRo_sFKJi5iAswqwc42wU.png);
+	background: url(https://1.s140i.faiscm.com/4/AIwBCAAQBBgAILnSl_sFKOO6_50CMLsGOLQI.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	width: 380px;
-	height: 400px;
+	width: 420px;
+	height: 600px;
 	z-index: 100;
 }
 .bigbanner .width front {
 	display: block;
 	position: absolute;
-	bottom: 130px;
-	right: 40px;
+	top: 155px;
+	right: 5px;
 	z-index: 20;
-	background: url(https://1.s140i.faiscm.com/4/AIwBCAAQBBgAIJGG8PcFKNDkjZQHMKgGOPcC.png);
+	background: url(https://13511974.s21i.faiusr.com/4/5/ABUIABAEGAAg-dv1uwYo2ozvtQIwKzj4AQ.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-position: center bottom;
-	width: 460px;
+	background-position: center top;
+	width: 26px;
 	height: 400px;
-	opacity: .25;
+	opacity: .5;
 }
