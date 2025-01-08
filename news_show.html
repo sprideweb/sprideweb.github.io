@@ -2,6 +2,7 @@
 <head>
 <meta charset="utf-8">
 <title>新闻详情</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="/jbwz/favicon.classic.ico" type="image/x-icon"/>
 <link rel="icon" href="/jbwz/favicon.classic.ico" type="image/x-icon"/>
 <style type="text/css">
@@ -9,13 +10,13 @@
 	margin: 0;
 	padding: 0;
 }
-@media(min-width:650px) {
+@media(min-width:800px) {
 	.bk {
-		width: 650px;
+		width: 800px;
 		margin: 0 auto;
 	}
 }
-@media(max-width:650px) {
+@media(max-width:800px) {
 	.bk {
 		width: 100%;
 		margin: 0;
@@ -50,11 +51,12 @@
 	text-align: center;
 	line-height: 1.5;
 	font-size: 24px;
+	padding: 15px 0;
 	font-weight: normal;
 }
 .nrq .wzxx {
 	text-align: center;
-	font-size: 14.5px;
+	font-size: 14px;
 	margin: 20px 0;
 	color: #9f9f9f;
 }
@@ -63,11 +65,6 @@
 	color: #000;
 	padding: 10px 20px;
 	line-height: 2;
-}
-.nrq #fbsj {
-	display: inline-block;
-	font-size: 14px;
-	vertical-align: middle;
 }
 #wznr p {
 	padding: 5px 0;
@@ -90,23 +87,44 @@
 empty {
 	display: block;
 	text-align: center;
-	font-size: 15px;
+	font-size: 16px;
 	padding: 50px 0;
-	color: #9f9f9f;
+	color: #5f5f5f;
 }
 empty img {
-	width: 150px;
+	width: 200px!important;
 	padding-bottom: 12px;
-	opacity: .8;
+}
+tm {
+	cursor: pointer;
+}
+clsbtn {
+	display: inline-block;
+	font-size: 14.5px;
+	padding: 0 20px;
+	line-height: 35px;
+	border-radius: 100px;
+	border: 1.5px solid #0072e3;
+	color: #0072e3;
+	margin: 20px auto 0 auto;
+	cursor: pointer;
+	transition: background .2s;
+}
+clsbtn:hover {
+	background: #0072e3;
+	color: #fff;
 }
 </style>
 </head>
 <body>
+<div class="wzbt">
+	<div class="bk"><tm onclick="window.location.href='index.html';">内容详情</tm><span style="margin-right: 20px;" onclick="window.close()">关闭</span><span onclick="window.print()">打印</span>
+	</div>
+</div>
 <div class="bk">
-	<div class="wzbt">新闻详情<span style="margin-right: 20px;" onclick="window.close()">关闭</span><span onclick="window.print()">打印</span></div>
 	<div class="nrq">
 		<h1 id="wzxbt"></h1>
-		<p id="wzxx" class="wzxx">时间：<span id="fbsj"></span></p>
+		<p id="wzxx" class="wzxx">时间：<span id="fbsj"></span>&emsp;&emsp;来源：<span id="xxly"></span></p>
 		<div id="wznr"></div>
 	</div>
 </div>
