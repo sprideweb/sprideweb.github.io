@@ -65,7 +65,7 @@ function addList2(title,time,id) {
     document.getElementById('news-index-cat2').insertAdjacentHTML('beforeend', c);
 }
 function openpop(id) {
-    var params = [
+    /*var params = [
         'width=610',
         'height=740',
         'location=no',
@@ -80,7 +80,8 @@ function openpop(id) {
         alert('您的浏览器暂不支持查看此类消息。');
     } else {
         newWindow.focus();
-    }
+    }*/
+    alert('新闻视窗升级中，给您带来不便敬请谅解。\n返回值：-'+id);
 }
 function checkNewsIndexifEmpty() {
     if(document.getElementById('news-index-cat1').innerHTML==='') {
