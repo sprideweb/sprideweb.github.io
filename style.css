@@ -5,12 +5,16 @@
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji",sans-serif;
 }
 body {
+	background: #f0f0f0;
 }
 p.ntfd {
 	padding: 200px 0;
 	text-align: center;
 	line-height: 1.8;
-	font-size: 16.5px;
+	font-size: 14px;
+	background: #fff;
+	margin: 0 auto;
+	width: 960px;
 }
 p.ntfd a {
 	display: inline-block;
@@ -29,7 +33,7 @@ p.ntfd a:hover {
 	font-style: normal;
 }
 .top {
-	height: 75px;
+	height: 60px;
 	background: #fff;
 	/*background: linear-gradient(to left, #ffd400, #ffc20e);*/
 	box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
@@ -38,6 +42,7 @@ p.ntfd a:hover {
 .width {
 	width: 960px;
 	margin: 0 auto;
+	background: #fff;
 }
 .home-banner img {
 	display: block;
@@ -48,12 +53,11 @@ p.ntfd a:hover {
 }
 .nav-out {
 	display: block;
-	background: #fff;
 	min-width: 960px;
-	height: 75px;
+	height: 60px;
 }
 .nav {
-	height: 75px;
+	height: 60px;
 	float: right;
 }
 .drop {
@@ -61,11 +65,12 @@ p.ntfd a:hover {
 	text-align: center;
 }
 .dropc {
-	width: 0px;
-	margin: 0 57px;
-	float: middle;
+	width: 90px;
+	margin: 0 5px;
+	transform: scale(100%,0);
+    transform-origin: top;
 	opacity: 0;
-	transition: .1s;
+	transition: .16s;
 	overflow: hidden;
 	position: absolute;
 	background: #fff;
@@ -73,25 +78,30 @@ p.ntfd a:hover {
 	z-index: 200;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 }
+.width::selection {
+	color:rgba(0, 0, 0, 0);
+}
 .drop:hover .dropc {
 	opacity: 1;
+	transform: scale(100%,100%);
+	width: 100px;
 	margin: 0;
-	width: 114px;
 }
 .drop:hover a {
 	opacity: 1;
 }
 .logo {
 	display: inline-block;
-	height: 41px;
-	padding: 17px 0;
+	height: 34px;
+	padding: 12px 0;
+	margin-left: 20px;
 	cursor: pointer;
 }
 .top img {
 	display: inline-block;
-	height: 61px;
+	height: 50px;
 	vertical-align: middle;
-	margin: 7px 0;
+	margin: 5px 0;
 	margin-right: 10px;
 }
 .dropc a {
@@ -102,7 +112,7 @@ p.ntfd a:hover {
 	font-size: 14px;
 	line-height: 1.5;
 	opacity: 0;
-	padding: 12px 0;
+	padding: 11px 0;
 	cursor: pointer;
 	text-align: center;
 	color: #000;
@@ -121,11 +131,11 @@ p.ntfd a:hover {
 }
 .nav a:not(.dropc a) {
 	display: inline-block;
-	font-size: 16px;
-	line-height: 75px;
+	font-size: 15px;
+	line-height: 60px;
 	color: #000;
 	text-decoration: none;
-	padding: 0 25px;
+	padding: 0 20px;
 	cursor: pointer;
 	background-position: center top;
 }
@@ -296,7 +306,7 @@ man button:hover {
 	color: #9f9f9f;	
 }
 .newsd {
-	padding: 0px 0px;
+	padding: 10px 0px;
 	margin: 0px auto!important;
 	background: #fff;
 }
@@ -306,7 +316,7 @@ man button:hover {
 	text-align: center;
 	font-weight: normal;
 	line-height: 1.5;
-	padding: 40px 0;
+	padding: 40px 50px;
 }
 .newsd h1#newstitle::after {
 	display: block;
@@ -318,9 +328,10 @@ man button:hover {
 	margin-top: 10px;
 }
 .newsd p#newsinfo {
-	color: #7f7f7f;
-	background: #f9f9f9;
-	padding: 10px 0;
+	color: #5b5b5b;
+	background: #fafafa;
+	padding: 10px 0px;
+	margin: 0 50px;
 	font-size: 14px;
 	text-align: center;
 	line-height: 1;
@@ -337,7 +348,7 @@ man button:hover {
 	vertical-align: middle;
 }
 #newscontent {
-	padding: 40px 20px;
+	padding: 40px 80px;
 	font-size: 14px;
 	line-height: 2;
 }
@@ -396,11 +407,19 @@ man button:hover {
 		margin: 0 auto;
 	}
 }
-
+bottom .width {
+	border-top: 1px solid #f0f0f0;
+}
+.syban {
+	background: url(https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg0ZicvgYov9Sv9AUwnxE49As.png);
+	background-size: 96% auto;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 680px;
+	background-color: #186AAB;
+}
 bottom {
 	display: block;
-	background: #f7f7f7;
-	border-top: 0px solid #e0e0e0;
 	color: #000;
 	font-size: 14px;
 	text-align: center;
@@ -408,7 +427,7 @@ bottom {
 	min-width: 960px;
 }
 bottom p {
-	line-height: 120px;
+	line-height: 90px;
 	vertical-align: middle;
 	display: inline-block;
 }
@@ -419,15 +438,15 @@ bottom p:last-child {
 	margin-left: 45px;
 }
 bottom .qrbox {
-	height: 100px;
-	padding-top: 20px;
+	height: 70px;
+	padding-top: 6px;
 	display: inline-block;
 	vertical-align: middle;
 }
 bottom .qrbox img {
 	display: inline-block;
 	vertical-align: middle;
-	height: 80px;
+	height: 66px;
 	padding: 0px 0;
 }
 bottom .qrbox span {
@@ -435,7 +454,7 @@ bottom .qrbox span {
 	text-align: left;
 	vertical-align: middle;
 	padding-left: 18px;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 20px;
 	padding: 10px 12px;
 	border-radius: 5px;
@@ -443,7 +462,7 @@ bottom .qrbox span {
 bottom .qrbox span b {
 	display: block;
 	color: #186AAB;
-	font-size: 14px;
+	font-size: 13px;
 	margin-top: 5px;
 	font-weight: normal;
 }
@@ -453,6 +472,17 @@ bottom .qrbox span b {
 	margin: 50px 5px;
 	background: #fff;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, .06);
+}
+.rdbtn {
+	cursor: pointer;
+	font-size: 14.5px;
+	color: #fff;
+	padding: 12px 24px;
+	border: none;
+	background: #ef4136;
+}
+.rdbtn:hover {
+	opacity: .6;
 }
 .page-abtg {
 	padding: 40px 45px;
@@ -567,7 +597,7 @@ namecard:hover {
 .c-right {
 	display: inline-block;
 	vertical-align: top;
-	width: 710px;
+	width: 690px;
 }
 .c-left .ctitle {
 	color: #186AAB;
@@ -589,7 +619,6 @@ namecard:hover {
 	color: #5f5f5f;
 	line-height: 36px;
 	font-size: 14.2px;
-	transition: .16s;
 }
 .c-left .cswitch a::before {
 	content: '';
@@ -614,10 +643,10 @@ namecard:hover {
 }
 .c-right .ddv1 h1 {
 	color: #186AAB;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 50px;
 	font-weight: normal;
-	border-bottom: 1px solid #9f9f9f;
+	border-bottom: 1px solid #e0e0e0;
 }
 .c-right .ddv1 h1::before {
 	content: '▎';
