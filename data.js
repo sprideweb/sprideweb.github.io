@@ -1,6 +1,45 @@
 finishLoad();
 document.getElementById('newnav').innerHTML=`
 <div class="width">
+<div id="top_notice">新版网站已经准备就绪！<a href="/new2025/">立即体验</a><close onclick="close_notice_1()">×</close></div>
+</div>
+<style>
+#top_notice {
+	background:#FFECEC;
+	color:#930000;
+	font-size:14.5px;
+	padding:0 20px;
+    transform-origin: top;
+	line-height:40px;
+	border-radius:5px;
+	transition:transform .2s;
+}
+#top_notice a {
+	color:#186AAB;
+	font-weight:bold;
+	text-decoration:none;
+}
+#top_notice close {
+	display:block;
+	cursor:pointer;
+	float:right;
+	font-size:33px;
+	color:#8f8f8f;
+	line-height:32px;
+}
+#top_notice close:hover {
+	color:#272727;
+}
+#top_notice a:hover {
+	color:#003D79;
+	text-decoration:underline;
+}
+#newnav {
+	height:100px;
+	transition:.2s;
+}
+</style>
+<div class="width">
 		<img class="logo" src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAggoWktgYou5X4sgIwyQM49QE.png" onclick="window.location.href='#'" />
 		<div class="nav">
 			<a href="#/">首页</a>
@@ -20,8 +59,8 @@ document.getElementById('newnav').innerHTML=`
 					<a href="#/index/xyx.html">小游戏</a>
 				</div>
 			</div>
-			<a href="#/index/vipnk.html">会员加盟</a>
-			<a href="#/index/jbzx.html">举报中心</a>
+			<!--<a href="#/index/vipnk.html">会员加盟</a>
+			<a href="#/index/jbzx.html">举报中心</a>-->
 		</div>
 	</div>
 `;
@@ -60,6 +99,11 @@ newsListList=`
         </div>
 		</div>
 `;
+function close_notice_1() {
+	document.getElementById('top_notice').style.transform='scale(100%,0)';
+	document.getElementById('newnav').style.height='60px';
+	setTimeout("document.getElementById('top_notice').style.display='none'",200);
+}
 function newsInfoInfo() {
 	switch(nid) {
 	case '50':
