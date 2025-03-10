@@ -1,6 +1,6 @@
 function createLoad() {
 	showLoad();
-	var randomt=Math.random() * (300 - 0) + 0;
+	var randomt=Math.random() * (0 - 0) + 0;
 	setTimeout("finishLoad()",randomt);
 }
 function hashChangeHandler() {
@@ -39,26 +39,6 @@ function hashChangeHandler() {
         <p>\u3000</p>
         <p>\u3000</p>
         <p>\u3000</p>
-        <p>\u3000</p>
-        <!--<h2>春潮简介</h2>
-        <p>春潮文化的前身是微信公众账号春潮SPEID，于2020年10月成立于东北亚区域中心城市——北国春城长春,  现在主要负责门户网站春潮网以及春潮向海、浪潮时代等微信订阅号的日常运营。其他业务还包括主题IP学习宝和互动游戏《池钓离吻花》的管理维护等。</p>
-        <h2>联系我们</h2>
-        <p>访客咨询：暂停</p>
-        <p>商务合作：暂停</p>
-        <p>地址：朝阳区自由大路与长庆街交叉口西南, 东北师大附中自由校区</p>
-        <h2>发展历程</h2>
-        <p>2022年</p>
-        <p>\u3000未完待续……<br/>\u300007月 浪潮时代微信公众号成立<br/>\u300004月 单机游戏《池钓里吻花》上线</p>
-        <p>2021年</p>
-        <p>\u300012月 学习宝第一支爆款视频（播放量破20万）诞生<br/>\u300012月 学习宝视频成立</p>
-        <p>2020年</p>
-        <p>\u300010月 发表第一篇专栏文章<br/>\u300010月 春潮微信公众号成立</p>
-        <h2>主营业务</h2>
-        <p>自媒体：主要由春潮SPRDE和浪潮时代（原：时代轨道）构成。春潮SPIRDE是国内综合公众号,时代轨道是专注于聚焦国内轨道交通行业信息和一手资讯的订阅号。</p>
-        <p>电子游戏：制作精良、玩法新颖、设计时尚的好玩的电子游戏《池钓离吻花》。</p>
-        <p>网络服务：春潮网（new.spride.asia）在线阅读网站是春潮微信公众号内文章以及《春潮专栏》文章站外唯一授权发布的网站。</p>
-        <p>短视频与直播：学习宝短视频ip管理与运营。</p>
-        <p><img src="https://1.s140i.faiscm.com/2/AIwBCAAQAhgAIKzzu6cGKP-H0pQHMLALOLAG.jpg"/></p>-->
         </div>
         </div>
         </div>
@@ -84,19 +64,6 @@ function hashChangeHandler() {
         <div class="ddv1">
         <h1>招贤纳士</h1>
         <div class="ddv2">
-        <!--<h2>热招职位</h2>
-        <p class="jobtitle">新媒体运营师 [2022]</p>
-		<p>工作内容：</p>
-		<p>1.<span>春潮</span>网旗下各类新媒体平台账号的日常运营和维护</p>
-		<p>2.<span>春潮</span>网及其下属网站的日常运行和维护</p>
-		<p>3.临时安排的其他工作</p>
-		<p>任职要求：</p>
-		<p>1.主动性强，吃苦耐劳，踏实努力，为人友善</p>
-		<p>2.身份年龄在18-75周岁之间，性别为男或女。</p>
-		<p>3.初中及以上学历者优先考虑</p>
-		<p>工作类型：兼职 弹性办公 线上办公 无坐班 平均一周工作0-1天</p>
-		<p style="margin-bottom:15px;">薪资组成：无底薪 按工作结算报酬 无奖金</p>
-		<h2>投递方式</h2>-->
 		<p> </p>
         </div>
         </div>
@@ -340,13 +307,7 @@ function basI(e,e2,e3,e4) {
 	document.getElementById('newscontent').innerHTML=newsCC;
 }
 function setTitle(titleName) {
-	document.title=titleName+' - 春潮文化';
-}
-function openWXSPH() {
-	alert('如何在微信视频号找到学习宝：\n1.打开微信找到视频号入口\n2.搜索“学习宝官号”关注即可！');
-}
-function openKS() {
-	alert('如何在快手找到学习宝：\n1.下载快手APP并打开\n2.搜索“学习宝官方账号”关注即可！');
+	document.title=titleName+' - 圆宵文化';
 }
 function openBI() {
 	setTimeout("window.open('https://space.bilibili.com/494631046/video','_blank');",500);
