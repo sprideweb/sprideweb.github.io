@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta itemprop="name" content="" />
+    <meta itemprop="description" content="东北师大附中高三必玩的经典小游戏" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width,target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="https://passport.cnblogs.com/scripts/jsencrypt.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body onLoad="init()" oncontextmenu=self.event.returnValue=false>
+    <div id="GameScoreLayer" class="BBOX SHADE bgc1" style="display:none;background: black;">
+        <div style="padding:5%;margin-top: 200px;color:white">
+            <div id="GameScoreLayer-text" style="font-size:42px;color: yellow;"></div>
+            <div id="GameScoreLayer-score" style="margin:10px 0;font-weight:normal;font-size:30px;">本轮分数</div>
+            <div id="GameScoreLayer-bast" style="font-weight:normal;font-size: 30px;">历史最佳</div>
+            <button type="button" class="btn btn-primary btn-lg" onclick="replayBtn()">再来一局</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='index.html'">回到首页</button>
+            
+        </div>
+    </div>
+    </div>
+    <div id="welcome" class="SHADE BOX-M">
+        <div class="welcome-bg FILL"></div>
+        <div class="FILL BOX-M" style="position:absolute;top:0;left:0;right:0;bottom:0;z-index:5;">
+            <div style="margin:0 8% 0 9%;">
+                <div style="font-size:2.6em; color:#FEF002;text-align:center"><img src="https://13511974.s21i.faimallusr.com/4/4/ABUIABAEGAAgwon7vgYovIauIzDtBDiXAQ.png" width="80%">
+                </div><br />
+                <div style="font-size:2.2em; color:#fff; line-height:1.5em;">
+                    
+                </div>
+                <br />
+                <div id="btn_group" style="display: block;">
+                    <button type="button" id="ready-btn" class="btnloading btn-lg" >开始游戏</button>
+                    <br><br>
+                    <a data-toggle="modal" data-target="#myModal2" class="btn btn-primary btn-lg">积分排行</a>
+                        <br><br>
+                        
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="show_setting()">更多设置</button>
+                    <br><br>
+
+                </div>
+                <div id="setting" style="display: none;">
+                    <!-- 此为无排行榜版本，去除名字留言 -->
+                    <div class="input-group mb-3" style="display: none;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">名字</span>
+                        </div>
+                        <input type="text" id="username" class="form-control" maxlength=8 placeholder="用于纪录排行(特殊字符会被过滤)">
+                    </div>
+                    <div class="input-group mb-3" style="display: none;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">留言</span>
+                        </div>
+                        <input type="text" id="message" class="form-control" maxlength=50 placeholder="禁广告/脏话(本项可不填)">
+                    </div>
+                    <div class="btn_group" style="text-align:center;">
+                        
+                         
+                      <!--<a href="guanyu.html" class="btn btn-primary btn-lg"><img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgmOuqrQYo6NXsvAEw7gE4NQ.png" height="25px"></a>
+                        <br><br>-->
+                        <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg">关于我们</a>
+                        <br><br>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="show_btn();save_cookie();">回主菜单</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<div class="modal fade" id="myModal" style="z-index: 99999999;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+ 
+      <!-- 模态框主体 -->
+      <div class="modal-body" style="text-align: center;">
+        <h5>关于我们</h5>
+        <div class="textbar">
+            《池钓离吻花》是由我们推出的一款玩法简单，易于上手的趣味小游戏。<br/>
+            策划：本项目组<br/>
+            美术：本项目组<br/>
+            运维：本项目组<br/>
+            如果您遇到任何问题或想向我们提出任何意见建议，请前往我们的唯一根据地——百度贴吧<a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E6%9D%8E%E6%96%87%E5%8C%96" target="_blank">李文化吧</a>。我们很愿意向您提供任何服务。<br/>
+            2022年5月于中国长春<br/>
+            <span class="text-success">MIT license</span>
+            <span class="text-danger">Copyright © 2022-present Seiya</span><br/>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br/>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br/>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br/>
+        </div>   
+      </div>
+ 
+      <!-- 模态框底部 -->
+      <div class=" btn" data-dismiss="modal" style="text-align: center;color: white;font-size: 17px;">
+      确定
+      </div>
+ 
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal2" style="z-index: 99999999;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+ 
+      <!-- 模态框主体 -->
+      <div class="modal-body" style="text-align: center;">
+        <h5>积分排行</h5>
+        <iframe class="if-btn" src="update.html"></iframe>
+      </div>
+ 
+      <!-- 模态框底部 -->
+      <div class=" btn" data-dismiss="modal" style="text-align: center;color: white;font-size: 17px;border-radius: 0 0 5px 5px;">
+      关闭
+      </div>
+ 
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
