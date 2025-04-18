@@ -143,5 +143,13 @@
 		line-height: 1.5!important;
 	}
 </style>
+<script>
+const path = window.location.pathname;
+const judge = path.split('/').pop();
+if(judge==='xianci.html') {
+	alert('error');
+	window.location.href='/jbwz/xianci';
+}
+</script>
 </body>
 </html>
