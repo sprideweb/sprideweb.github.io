@@ -1,0 +1,150 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/jbwz/favicon.classic.ico" type="image/x-icon">
+<link rel="icon" href="/jbwz/favicon.classic.ico" type="image/x-icon">
+<title>春潮网站群 | 春潮产品中心</title>
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+	}
+	body {
+		background: #fafafa;
+	}
+	.w900 {
+		max-width: 900px;
+		width: 96%;
+		margin: 0 auto;
+	}
+	#fromInfo {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, .25);
+		display: none;
+	}
+	#fromInfo .dialog {
+		max-width: 480px;
+		width: 80%;
+		margin: 0 auto;
+		background: #fff;
+		border-radius: 5px;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+		padding: 20px;
+		margin-top: 30vh;
+	}
+	#fromInfo div p {
+		font-size: 15px;
+		line-height: 35px;
+		color: #5b5b5b;
+	}
+	#fromText {
+		color: red;
+		cursor: pointer;
+	}
+	.banner {
+		background: #0080ff;
+	}
+	.banner div h1 {
+		display: inline-block;
+		color: #fff;
+		font-size: 22px;
+		line-height: 60px;
+	}
+	.banner div span {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 14px;
+		color: #fff;
+		margin-left: 10px;
+	}
+	.ok {
+		display: block;
+		width: 100px;
+		padding: 12px 0;
+		margin: 0 auto;
+		font-size: 14px;
+		color: #fff;
+		text-align: center;
+		border-radius: 5px;
+		background: green;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+	a.link {
+		display: inline-block;
+		width: 160px;
+		background: #fff;
+		font-size: 16px;
+		line-height: 80px;
+		padding: 0 20px;
+		margin: 15px 8px;
+		color: #0080ff;
+		text-decoration: none;
+	}
+	a.link:hover {
+		box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+	}
+	.foot {
+		background: #fff;
+		text-align: center;
+		padding: 40px 0;
+		margin-top: 50px;
+		font-size: 14px;
+		color: #8f8f8f;
+	}
+	.foot a {
+		display: inline-block;
+		color: #8f8f8f;
+		text-decoration: none;
+		margin: 0 5px;
+	}
+	.foot a:hover {
+		text-decoration: underline;
+	}
+</style>
+</head>
+<body>
+<div id="fromInfo">
+	<div class="dialog">
+		<p>欢迎访问春潮网站群！您从<span id="fromText"></span>来到本页面。本页面展示的网站均为春潮及旗下网站，它们都安全可信。</p>
+		<span class="ok" onclick="ok()">我知道了</span>
+	</div>
+</div>
+<div class="banner">
+	<div class="w900">
+		<h1>春潮网站群</h1>
+		<span>安全 绿色 无毒</span>
+	</div>
+</div>
+<div class="w900">
+	<a class="link" target="_blank" href="http://www.spride2020.com">春潮官网</a>
+	<a class="link" target="_blank" href="http://www.spride2020.com/e/">E春潮 网上春潮</a>
+	<a class="link" target="_blank" href="http://www.spride2020.com/ccbjb/">春潮编辑部</a>
+	<a class="link" target="_blank" href="http://bao.spride2020.com">学习宝 春潮视频</a>
+	<a class="link" target="_blank" href="http://bao.spride2020.com/app/">学习宝APP</a>
+	<a class="link" target="_blank" href="http://spride.asia/daojia/">春潮到家</a>
+	<a class="link" target="_blank" href="http://hdyl.spride2020.com/">春潮互动娱乐</a>
+	<a class="link" target="_blank" href="http://game.spride2020.com/">春潮游戏</a>
+	<a class="link" target="_blank" href="http://www.spride2020.com/jubao/">春潮举报中心</a>
+	<a class="link" target="_blank" href="http://spride.asia/jingshi/">惊时电子刊</a>
+</div>
+<div class="foot"><p>Copyright 2024 wangzhanqun&ensp;Design by Chucnhao.<a href="#" onclick="bc()">报错</a></p></div>
+</body>
+<script type="text/javascript">
+	const urlParams = new URLSearchParams(window.location.search);
+	const getFrom = urlParams.get('from');
+	if(getFrom) {
+		document.getElementById('fromInfo').style.display='block';
+		document.getElementById('fromText').innerText=getFrom;
+	}
+	function ok() {document.getElementById('fromInfo').style.display='none';}
+	function bc() {alert('管理员联系方式：jys_2202');}
+</script>
+</html>
