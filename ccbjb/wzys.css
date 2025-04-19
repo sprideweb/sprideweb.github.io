@@ -355,7 +355,7 @@ xw:hover {
 xw a {
 	display: inline-block;
 	vertical-align: top;
-	max-width: 375px;
+	max-width: 520px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
