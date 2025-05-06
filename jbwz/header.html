@@ -1,0 +1,147 @@
+
+<html>
+<head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		user-select: none;
+	}
+	header {
+		display: block;
+		background: #1c1c1c;
+		height: 40px;
+		padding: 0 50px;
+		font-size: 14px;
+		line-height: 40px;
+		color: #3c3c3c;
+		position: relative;
+		overflow: hidden;
+	}
+	header span {
+		line-height: 40px;
+	}
+	scrol {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		left: 50px;
+		height: 40px;
+		width: 60px;
+		background: #ea0000;
+		transition: left .5s, opacity .1s;
+		z-index: 0;
+		opacity: 1;
+	}
+	header a {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		line-height: 40px;
+		font-size: 14.5px;
+		color: #f0f0f0;
+		text-align: center;
+		width: 59px;
+		text-decoration: none;
+		z-index: 10;
+		cursor: pointer;
+	}
+	header a:hover {
+		color: #fff;
+	}
+	header span:nth-child(1):hover~scrol {
+		opacity: 1;
+		height: 40px;
+		left: 50px;
+		transition-property: left, opacity;
+		transition-delay: 0s, .15s;
+	}
+	header span:nth-child(2):hover~scrol {
+		opacity: 1;
+		height: 4px;
+		left: 113px;
+		transition-property: left, opacity;
+		transition-delay: 0s, .15s;
+	}
+	header span:nth-child(3):hover~scrol {
+		opacity: 1;
+		height: 4px;
+		left: 176px;
+		transition-property: left, opacity;
+		transition-delay: 0s, .15s;
+	}
+	header span:nth-child(4):hover~scrol {
+		opacity: 1;
+		height: 4px;
+		left: 239px;
+		transition-property: left, opacity;
+		transition-delay: 0s, .15s;
+	}
+	header span:nth-child(5):hover~scrol {
+		opacity: 1;
+		height: 4px;
+		left: 302px;
+		transition-property: left, opacity;
+		transition-delay: 0s, .15s;
+	}
+	header span:nth-child(6):hover~scrol {
+		opacity: 1;
+		height: 4px;
+		left: 365px;
+		transition-property: left, opacity;
+		transition-delay: 0s, .15s;
+	}
+	header span:nth-child(7):hover~scrol {
+		opacity: 1;
+		height: 4px;
+		left: 428px;
+		transition-property: left, opacity;
+		transition-delay: 0s, .15s;
+	}
+	header span:nth-child(8):hover~scrol {
+		opacity: 1;
+		height: 4px;
+		left: 491px;
+		transition-property: left, opacity;
+		transition-delay: 0s, .15s;
+	}
+	header span:nth-child(9):hover~scrol {
+		opacity: 1;
+		height: 4px;
+		left: 554px;
+		transition-property: left, opacity;
+		transition-delay: 0s, .15s;
+	}
+	mhlogo {
+		background: url(https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgkITowAYo7JmWrAcw2AQ4ugE.png);
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		display: inline-block;
+		vertical-align: top;
+		height: 41px;
+		width: 120px;
+		cursor: pointer;
+		float: right;
+		transition: filter .2s;	
+	}
+</style>
+</head>
+<body>
+<header>
+	<span><a onclick="cs('www')">主站</a>|</span><span><a onclick="cs('bao')">视频</a>|</span><span><a onclick="ms('movie')">电影</a>|</span><span><a onclick="cs('game')">游戏</a>|</span><span><a onclick="cs('read')">精选</a>|</span><span><a onclick="ms('meishi')">美食</a>|</span><span><a onclick="cs('mail')">邮箱</a>|</span><span><a onclick="ms('jubao')">举报</a></span>
+	<scrol></scrol>
+	<mhlogo onclick="cs('www')"></mhlogo>
+</header>
+<script>
+	function ms(sitename) {
+		window.open('https://www.spride2020.com/'+sitename+'/','_blank');
+	}
+	function cs(sitename) {
+		window.open('http://'+sitename+'.spride2020.com/','_blank');
+	}
+</script>
+</body>
+</html>
