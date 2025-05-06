@@ -1,9 +1,5 @@
 document.getElementById('home').innerHTML=`
-<div class="floater">
-	<div class="width">
-		<p>欢迎访问春潮编辑部！<span><a href="http://www.spride2020.com/zhanqun/?from=春潮编辑部网站" target="_blank">春潮站群</a></span></p>
-	</div>
-</div>
+<iframe src="/jbwz/header.html" style="border:none;height:40px;width:100%;" frameborder="0" scrolling="no"></iframe>
 <div style="background:#fff"><div class="width">
 <img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAggoWktgYou5X4sgIwyQM49QE.png" class="logo" style="height:40px;padding:30px 0;"/>
 <img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgtIKIwAYojqr4vQQwjwM4aQ.png" class="logo"/>
