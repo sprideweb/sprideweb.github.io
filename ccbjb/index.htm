@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="https://www.spride2020.com/jbwz/favicon.classic.ico" type="image/x-icon">
+<link rel="icon" href="https://www.spride2020.com/jbwz/favicon.classic.ico" type="image/x-icon">
+<script type="text/javascript" src="core.js"></script>
+<style type="text/css">
+#loader {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	opacity: 1;
+	background-color: rgba(0, 0, 0, .35);
+	transition: opacity .28s;
+}
+.loader {
+	margin: 45vh auto 0 auto;
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  animation:
+  l20-1 0.8s infinite linear alternate,
+  l20-2 1.6s infinite linear;
+}
+@keyframes l20-1{
+   0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+   12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+   25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+   50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+   62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+   75%   {clip-path: polygon(50% 50%,100% 100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+   100%  {clip-path: polygon(50% 50%,50%  100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
+}
+@keyframes zd0 {
+	0% {transform: rotate(0);}
+	/*12.5% {transform: rotate(45deg);}
+	25% {transform: rotate(90deg);}
+	37.5% {transform: rotate(135deg);}
+	50% {transform: rotate(180deg);}
+	62.5% {transform: rotate(225deg);}
+	75% {transform: rotate(270deg);}
+	87.5% {transform: rotate(315deg);}*/
+	100% {transform: rotate(360deg);}
+}
+#loadcc {
+	text-align: center;
+	padding: 200px 0;
+	user-select: none;
+}
+#loadcc img {
+	width: 80px;
+	animation: zd0 .8s steps(8) infinite;
+}
+#loadcc p {
+	font-size: 20px;
+	line-height: 75px;
+	color: #8f8f8f;
+}
+@keyframes l20-2{ 
+  0%    {transform:scaleY(1)  rotate(0deg)}
+  49.99%{transform:scaleY(1)  rotate(135deg)}
+  50%   {transform:scaleY(-1) rotate(0deg)}
+  100%  {transform:scaleY(-1) rotate(-135deg)}
+}
+#home, #news, #page {
+	display: none;
+}
+</style>
+</head>
+<body>
+<div id="loader">
+	<div class="loader"></div>
+</div>
+<div class="bg-top">
+	<div class="">
+		<img class="logo" src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg5IPrrAYomOvB6AQwyQM49QE.png"/><bio>试运行</bio>
+		<a class="back-to-old" href="/ccbjb/index1.html">返回旧版</a>
+		<div class="nav">
+			<a onclick="goA('')">首页</a>
+			<div class="drop">
+				<a>向我们投稿</a>
+				<div class="dropc">
+					<a onclick="goA('submit/announcement')">投稿须知</a>
+					<a onclick="goA('submit/fee')">稿酬标准</a>
+				</div>
+			</div>
+			<a onclick="goA('tuiwen')">编辑推荐</a>
+			<a onclick="goA('writers')">作者精选</a>
+			<a onclick="goA('about')">关于我们</a>
+			<div class="drop">
+				<a>会员增值服务</a>
+				<div class="dropc">
+					<a onclick="goA('vip/uplus')">春潮优享会员</a>
+					<a onclick="goA('vip/benefits')">会员权益</a>
+					<a onclick="goA('vip/join')">入会办理</a>
+					<a onclick="goA('vip/news')">会员动态</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="home">
+	<div class="hm-width">
+		<img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAgk_72wAYoyIL8ngMwgBA4gAk.png" width="100%"/>
+	</div>
+</div>
+
+<div id="news">
+	<div class="new-main width">
+		<div class="new-left">
+			<div class="newsd">
+				<h1 id="newstitle"></h1>
+				<p id="newsinfo"></p>
+				<div id="newscontent"></div>
+				<p id="ac-stn"></p>
+			</div>
+		</div><div class="new-nav" id="news-n-right"></div>
+	</div>
+</div>
+
+<div id="page"></div>
+
+
+<div id="loadcc">
+	<img src="https://13511974.s21i.faiusr.com/4/1/ABUIABAEGAAg1Nr7wAYo9e7GrgEwsAk48gk.png"/>
+	<p>Loading...</p>
+</div>
+
+<bottom>
+	<div class="width">
+		<p>Copyright © 2020-2025 春潮编辑部网站 All right reserved.&nbsp;技术支持：春潮网</p>
+	</div>
+</bottom>
+
+<script type="text/javascript">
+	window.addEventListener('load', hashChangeHandler);
+	window.addEventListener('hashchange', hashChangeHandler);
+</script>
+<script type="text/javascript" src="data.js"></script>
+</body>
+</html>
